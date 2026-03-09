@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/tooltip";
 import { motion } from "framer-motion";
 
-const TechGlobe = lazy(() => import("@/components/TechGlobe"));
+const TechGlobe = lazy(() => import("@/features/home/components/TechGlobe"));
 
 interface StackItem {
   name: string;
@@ -93,9 +93,9 @@ const TechStackSection = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="block md:hidden mb-8"
           >
-              <Suspense fallback={<div className="w-full h-[280px]" />}>
-                <TechGlobe compact />
-              </Suspense>
+            <Suspense fallback={<div className="w-full h-[280px]" />}>
+              <TechGlobe compact />
+            </Suspense>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
