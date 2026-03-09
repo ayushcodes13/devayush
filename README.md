@@ -6,8 +6,12 @@
   Scaffolded with [Lovable](https://lovable.dev) to accelerate boilerplate UI, then rigorously customized and architected from the ground up for maintainability.
 
   <p align="center">
-    <a href="https://devayush.com"><strong>View Live Site »</strong></a>
+    <a href="https://devayush-portfolio.vercel.app/"><strong>View Live Site »</strong></a>
   </p>
+
+  <a href="https://devayush-portfolio.vercel.app/">
+    <img src="public/og-image.png" alt="Portfolio Preview" width="800" style="border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.2);" />
+  </a>
 </div>
 
 <br />
