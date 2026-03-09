@@ -1,3 +1,5 @@
+// @ts-nocheck
+// Deno Edge Function requires ts-nocheck in a Node/Vite environment to prevent standard TS errors
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
 
 const corsHeaders = {
