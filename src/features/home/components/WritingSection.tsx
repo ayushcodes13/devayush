@@ -11,11 +11,11 @@ interface Post {
 
 const posts: Post[] = [
   {
-    title: "Designing reliable RAG systems",
-    description: "Lessons from building retrieval pipelines that need to work every time, not just most of the time.",
+    title: "A RAG system that knows when not to answer",
+    description: "Building a retrieval pipeline with abstention logic — so the system stays silent when it doesn't have enough context, instead of hallucinating an answer.",
     date: "2025",
-    tag: "SYSTEMS",
-    href: "https://hashnode.com/@ayoozzzz",
+    tag: "RAG",
+    href: "https://devayush.hashnode.dev/rag-system-that-knows-when-not-to-answer",
   },
   {
     title: "Why evaluation matters in LLM applications",
