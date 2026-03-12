@@ -60,9 +60,9 @@ export interface ProjectCategory {
 
 export const projectCategories: ProjectCategory[] = [
   {
-    id: "llm-apps",
-    label: "LLM Applications",
-    tagline: "Production-grade systems powered by large language models",
+    id: "flagship",
+    label: "Flagship Projects",
+    tagline: "Production-grade LLM application systems",
     icon: "",
     projects: [
       {
@@ -312,9 +312,9 @@ export const projectCategories: ProjectCategory[] = [
     ],
   },
   {
-    id: "research-ml",
-    label: "Research-Grade ML/DL",
-    tagline: "Deep learning and classical ML with rigor",
+    id: "legacy",
+    label: "Legacy Projects",
+    tagline: "Earlier machine learning and deep learning research-based projects",
     icon: "",
     projects: [
       {
