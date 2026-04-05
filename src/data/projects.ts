@@ -30,6 +30,8 @@ import krishnaVerse from "@/assets/krishna-verse.png";
 import policyArchitecture from "@/assets/policy-architecture.png";
 import policyCover from "@/assets/policy-cover.png";
 import policyDemo from "@/assets/policy-demo.png";
+import tenderCover from "@/assets/tender-cover.png";
+import tenderArchitecture from "@/assets/tender-architecture.png";
 
 export interface Project {
   title: string;
@@ -110,6 +112,47 @@ export const projectCategories: ProjectCategory[] = [
         ],
         github: "https://github.com/ayushcodes13/Internal-Policy-Intelligence-System",
         demo: "https://github.com/ayushcodes13/Internal-Policy-Intelligence-System",
+      },
+      {
+        title: "Tender Intelligence System",
+        summary: "An AI-powered decision intelligence workflow built to automate government tender discovery, relevance scoring, and shortlisting — reducing manual daily research from 2 hours to 10 minutes.",
+        image: tenderCover,
+        architectureImage: tenderArchitecture,
+        problem: "A business team was spending nearly 2 hours every day manually scanning multiple government tender portals to identify relevant opportunities. The workflow was repetitive, high-friction, and error-prone. The core problem was decision speed and filtering relevance at scale. The system needed to answer one question reliably: Which tenders deserve immediate review today?",
+        architecture: "A multi-stage tender intelligence pipeline designed to convert raw portal listings into a decision-ready shortlist. The system separates ingestion, filtering, ranking, and summarization into deterministic workflow stages.",
+        architecturePipeline: [
+          "01 Data Ingestion — Automated retrieval of tender listings from multiple portals",
+          "02 Parsing & Structuring — Extracting eligibility, deadlines, and intent into structured records",
+          "03 Relevance Scoring — LLM-assisted semantic matching against business-specific criteria",
+          "04 Priority Ranking — Weighted ranking based on urgency, fit score, and contract value",
+          "05 Shortlist Generation — Conversion of top-ranked tenders into a daily review list",
+          "06 Workflow Dashboard — Operator-facing interface for validation and fast action",
+        ],
+        decisions: [
+          "Semantic fit scoring over keyword filtering to capture intent-level matches beyond simple text overlap",
+          "Structured metadata extraction to normalize inconsistent source formats for downstream ranking logic",
+          "Deterministic ranking rules combining semantic scores with explicit business constraints like deadlines",
+          "Human-in-the-loop validation to ensure operational trust and prevent missed opportunities",
+        ],
+        technologies: ["Python 3.10+", "LangChain", "FastAPI", "PostgreSQL / pgvector", "BeautifulSoup", "OpenAI", "Streamlit"],
+        failureModes: [
+          "Government portal dynamic format changes breaking scraping logic",
+          "Eligibility criteria extraction noise from poorly formatted source PDFs",
+          "Semantic relevance overweighting generic procurement language",
+          "Deadline parsing edge cases handled with explicit fallback rules",
+        ],
+        results: [
+          "Reduced manual research from 2 hours to 10 minutes",
+          "Converted hundreds of daily listings into a concise decision-ready shortlist",
+          "Improved response speed for bid decision workflows",
+          "Reduced risk of missing time-sensitive tenders",
+        ],
+        metrics: [
+          { label: "Time Reduction", value: "91%" },
+          { label: "Review Time", value: "10 min" },
+          { label: "Consistency", value: "High" },
+        ],
+        github: "https://github.com/ayushcodes13/tendermatch",
       },
     ],
   },
