@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowRight, ArrowUpRight, Github, ExternalLink, X, AlertTriangle, Lightbulb, Wrench, BarChart3 } from "lucide-react";
 import { projectCategories, Project } from "@/data/projects";
@@ -28,6 +29,16 @@ const SectionBlock = ({ icon: Icon, label, children, index }: { icon: any; label
 
 const ProjectsSection = () => {
   const [activeProject, setActiveProject] = useState<Project | null>(null);
+
+  // Lock body scroll when modal is open
+  useEffect(() => {
+    if (activeProject) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => { document.body.style.overflow = ""; };
+  }, [activeProject]);
 
   const closeProject = () => setActiveProject(null);
 
@@ -120,9 +131,10 @@ const ProjectsSection = () => {
         </div>
       </section>
 
-      {/* Project Detail Modal */}
-      <AnimatePresence>
-        {activeProject && (
+      {/* Project Detail Modal — rendered via portal to escape ScrollReveal transform */}
+      {createPortal(
+        <AnimatePresence>
+          {activeProject && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -310,8 +322,10 @@ const ProjectsSection = () => {
               </div>
             </motion.div>
           </motion.div>
-        )}
-      </AnimatePresence>
+          )}
+        </AnimatePresence>,
+        document.body
+      )}
     </>
   );
 };
