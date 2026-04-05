@@ -31,7 +31,9 @@ import policyArchitecture from "@/assets/policy-architecture.png";
 import policyCover from "@/assets/policy-cover.png";
 import policyDemo from "@/assets/policy-demo.png";
 import tenderCover from "@/assets/tender-cover.png";
-import tenderArchitecture from "@/assets/tender-architecture.png";
+import tenderArch1 from "@/assets/tender-arch-1.png";
+import tenderArch2 from "@/assets/tender-arch-2.png";
+import tenderArch3 from "@/assets/tender-arch-3.png";
 
 export interface Project {
   title: string;
@@ -40,7 +42,7 @@ export interface Project {
   gallery?: string[];
   problem: string;
   architecture: string;
-  architectureImage?: string;
+  architectureImage?: string | string[];
   architecturePipeline: string[];
   decisions: string[];
   technologies: string[];
@@ -117,7 +119,7 @@ export const projectCategories: ProjectCategory[] = [
         title: "Tender Intelligence System",
         summary: "An AI-powered decision intelligence workflow built to automate government tender discovery, relevance scoring, and shortlisting — reducing manual daily research from 2 hours to 10 minutes.",
         image: tenderCover,
-        architectureImage: tenderArchitecture,
+        architectureImage: [tenderArch1, tenderArch2, tenderArch3],
         problem: "A business team was spending nearly 2 hours every day manually scanning multiple government tender portals to identify relevant opportunities. The workflow was repetitive, high-friction, and error-prone. The core problem was decision speed and filtering relevance at scale. The system needed to answer one question reliably: Which tenders deserve immediate review today?",
         architecture: "A multi-stage tender intelligence pipeline designed to convert raw portal listings into a decision-ready shortlist. The system separates ingestion, filtering, ranking, and summarization into deterministic workflow stages.",
         architecturePipeline: [

@@ -239,8 +239,15 @@ const ProjectsSection = () => {
                       ))}
                     </div>
                     {activeProject.architectureImage && (
-                      <div className="rounded-xl overflow-hidden mt-4 border border-border">
-                        <img src={activeProject.architectureImage} alt="Architecture diagram" className="w-full h-auto" />
+                      <div className="space-y-4 mt-4">
+                        {(Array.isArray(activeProject.architectureImage)
+                          ? activeProject.architectureImage
+                          : [activeProject.architectureImage]
+                        ).map((img, idx) => (
+                          <div key={idx} className="rounded-xl overflow-hidden border border-border bg-background/50">
+                            <img src={img} alt={`Architecture diagram ${idx + 1}`} className="w-full h-auto" />
+                          </div>
+                        ))}
                       </div>
                     )}
                   </SectionBlock>
