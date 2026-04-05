@@ -40,14 +40,13 @@ const NowSection = () => {
             </div>
             <div className="space-y-3">
               <h3 className="text-[15px] font-medium text-foreground">
-                Production RAG evaluation framework
+                Research-Aware Outreach Engine
               </h3>
               <p className="text-[14px] text-muted-foreground leading-[1.7]">
-                Currently building an evaluation pipeline that measures retrieval precision,
-                answer faithfulness, and latency across multiple models in production.
-                The goal: automated regression testing so every prompt change is
-                quantifiably better or worse before it ships.
-              </p>
+                Building an AI pipeline that reads published research papers, detects instrumentation bottlenecks and unmet experimental needs, maps them to relevant product offerings, and generates highly contextual outbound outreach for scientific equipment distributors.
+                <br /><br />
+                Designed to replace generic cold outreach with evidence-grounded, research-specific communication that improves reply quality and sales relevance.
+               </p>
               <motion.div
                 className="flex items-center gap-2 pt-1"
                 initial={{ opacity: 0 }}
