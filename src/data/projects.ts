@@ -116,7 +116,7 @@ export const projectCategories: ProjectCategory[] = [
         demo: "https://github.com/ayushcodes13/Internal-Policy-Intelligence-System",
       },
       {
-        title: "Tender Intelligence System",
+        title: "Tender Match",
         summary: "An AI-powered decision intelligence workflow built to automate government tender discovery, relevance scoring, and shortlisting — reducing manual daily research from 2 hours to 10 minutes.",
         image: tenderCover,
         architectureImage: [tenderArch1, tenderArch2, tenderArch3],
