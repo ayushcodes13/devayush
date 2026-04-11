@@ -22,11 +22,11 @@ const HeroSection = () => {
             </div>
 
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-[-0.035em] leading-[1.08] mb-5 animate-slide-up">
-              <span className="block text-foreground">
-                I build <span className="gradient-text">AI systems</span>
+              <span className="block">
+                I build <span className="gradient-text">Operational AI Systems</span>.
               </span>
               <span className="block mt-2 text-3xl sm:text-4xl md:text-5xl text-muted-foreground font-medium">
-                founders can put in front of users fast.
+                that founders can <span className="gradient-text">ship fast</span>.
               </span>
             </h1>
 
