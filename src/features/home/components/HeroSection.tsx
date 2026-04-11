@@ -34,7 +34,7 @@ const HeroSection = () => {
               className="text-[15px] text-muted-foreground max-w-[480px] leading-[1.7] mt-6 animate-slide-up"
               style={{ animationDelay: "0.16s" }}
             >
-              Workflow intelligence, retrieval systems, and decision-support products built for real-world use.
+              Hey, I’m Devayush. I build workflow intelligence, retrieval systems, and decision-support products for real-world use.
             </p>
 
             <div
