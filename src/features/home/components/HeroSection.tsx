@@ -57,19 +57,7 @@ const HeroSection = () => {
 
           </div>
 
-          {/* Avatar */}
-          <div className="animate-fade-in flex-shrink-0">
-            <div className="relative w-36 h-36 md:w-48 md:h-48">
-              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/40 to-primary/10 blur-xl" />
-              <div className="relative w-full h-full rounded-full border-2 border-primary/30 overflow-hidden bg-card">
-                <img
-                  src={avatarImg}
-                  alt="Devayush avatar"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
     </section>
