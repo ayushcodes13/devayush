@@ -17,7 +17,7 @@ const HeroSection = () => {
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-border bg-card mb-10 animate-fade-in">
               <span className="status-dot" />
               <span className="font-mono text-[11px] text-muted-foreground">
-                available for startup collaborations
+                available for startup collaborations & early product roles
               </span>
             </div>
 
@@ -25,8 +25,8 @@ const HeroSection = () => {
               <span className="block">
                 I build <span className="gradient-text">Operational AI Systems</span>.
               </span>
-              <span className="block mt-2 text-3xl sm:text-4xl md:text-5xl text-muted-foreground font-medium">
-                that founders can <span className="gradient-text">ship fast</span>.
+              <span className="block mt-0.5 text-3xl sm:text-4xl md:text-5xl text-muted-foreground font-bold">
+                Founders can <span className="gradient-text">ship them fast</span>.
               </span>
             </h1>
 
@@ -34,7 +34,7 @@ const HeroSection = () => {
               className="text-[15px] text-muted-foreground max-w-[480px] leading-[1.7] mt-6 animate-slide-up"
               style={{ animationDelay: "0.16s" }}
             >
-              Hey, I’m Devayush. I build workflow intelligence, retrieval systems, and decision-support products for real-world use.
+              Hey, I’m Devayush. I build workflow intelligence, retrieval systems, and decision-support products for real-world workflows.
             </p>
 
             <div
@@ -51,7 +51,7 @@ const HeroSection = () => {
                 href="#contact"
                 className="inline-flex items-center gap-2 font-mono text-[13px] px-4 py-2 rounded-md border border-border text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors duration-150"
               >
-                build with me
+                work together
               </a>
             </div>
 
