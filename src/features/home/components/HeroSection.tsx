@@ -17,16 +17,16 @@ const HeroSection = () => {
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-border bg-card mb-10 animate-fade-in">
               <span className="status-dot" />
               <span className="font-mono text-[11px] text-muted-foreground">
-                available for applied ai roles
+                available for startup collaborations
               </span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-[-0.035em] leading-[1.08] mb-5 animate-slide-up">
-              <span className="block">
-                hey, i'm <span className="gradient-text">devayush</span>.
+              <span className="block text-foreground">
+                I build <span className="gradient-text">AI systems</span>
               </span>
               <span className="block mt-2 text-3xl sm:text-4xl md:text-5xl text-muted-foreground font-medium">
-                i build <span className="gradient-text">applied ai systems</span>.
+                founders can put in front of users fast.
               </span>
             </h1>
 
@@ -34,9 +34,7 @@ const HeroSection = () => {
               className="text-[15px] text-muted-foreground max-w-[480px] leading-[1.7] mt-6 animate-slide-up"
               style={{ animationDelay: "0.16s" }}
             >
-              Focused on applied AI: retrieval systems, evaluation pipelines,
-              and production-grade automation. I care about systems that work
-              beyond the notebook.
+              Workflow intelligence, retrieval systems, and decision-support products built for real-world use.
             </p>
 
             <div
@@ -47,21 +45,13 @@ const HeroSection = () => {
                 href="#projects"
                 className="inline-flex items-center gap-2 font-mono text-[13px] px-4 py-2 rounded-md bg-primary text-primary-foreground hover:opacity-90 transition-opacity duration-150"
               >
-                view projects
+                view case studies
               </a>
               <a
                 href="#contact"
                 className="inline-flex items-center gap-2 font-mono text-[13px] px-4 py-2 rounded-md border border-border text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors duration-150"
               >
-                get in touch
-              </a>
-              <a
-                href="/resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 font-mono text-[13px] px-4 py-2 rounded-md border border-border text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors duration-150"
-              >
-                ↓ resume
+                build with me
               </a>
             </div>
 

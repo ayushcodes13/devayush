@@ -1,5 +1,6 @@
 import Navbar from "@/core/layout/Navbar";
 import HeroSection from "@/features/home/components/HeroSection";
+import CollabSection from "@/features/home/components/CollabSection";
 import AboutSection from "@/features/home/components/AboutSection";
 import EngineeringApproachSection from "@/features/home/components/EngineeringApproachSection";
 import NowSection from "@/features/home/components/NowSection";
@@ -23,6 +24,9 @@ const Index = () => {
       <ScrollToTop />
       <Navbar />
       <HeroSection />
+      <ScrollReveal>
+        <CollabSection />
+      </ScrollReveal>
       <ScrollReveal>
         <AboutSection />
       </ScrollReveal>

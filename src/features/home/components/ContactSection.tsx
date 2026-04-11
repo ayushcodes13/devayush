@@ -14,7 +14,7 @@ const terminalLines = [
   { prompt: true, text: "whoami", delay: 0 },
   { prompt: false, text: "devayush — applied ai engineer", delay: 600 },
   { prompt: true, text: "cat status.txt", delay: 1200 },
-  { prompt: false, text: "🟢 open to work", delay: 1800 },
+  { prompt: false, text: "🟢 available for startup collaborations & early product roles", delay: 1800 },
   { prompt: true, text: "cat location.txt", delay: 2400 },
   { prompt: false, text: "📍 india (IST, UTC+5:30)", delay: 3000 },
   { prompt: true, text: "cat interests.txt", delay: 3600 },
@@ -96,18 +96,37 @@ const ContactSection = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: 0.05 }}
             >
-              Let's build something reliable.
+              Have an operational workflow problem worth solving?
             </motion.h3>
             <motion.p
-              className="text-[14px] text-muted-foreground mb-8 max-w-md leading-[1.65]"
+              className="text-[14px] text-muted-foreground mb-6 max-w-md leading-[1.65]"
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: 0.1 }}
             >
-              Based in India. Open to applied AI roles, collaborations,
-              and interesting problems worth solving.
+              Let's prototype an AI system around it. Based in India. Open to early-stage product roles, startup collaborations, and founder conversations.
             </motion.p>
+            <motion.div
+              className="flex items-center gap-3 mb-10"
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: 0.15 }}
+            >
+              <a
+                href="mailto:devayushrout.work@gmail.com?subject=Book%20a%20conversation"
+                className="inline-flex items-center gap-2 font-mono text-[12px] px-4 py-2 rounded-md bg-primary text-primary-foreground hover:opacity-90 transition-opacity duration-150"
+              >
+                Book a conversation
+              </a>
+              <a
+                href="mailto:devayushrout.work@gmail.com"
+                className="inline-flex items-center gap-2 font-mono text-[12px] px-4 py-2 rounded-md border border-border text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors duration-150"
+              >
+                Email me
+              </a>
+            </motion.div>
             <div className="flex flex-col gap-2.5">
               {links.map((link, i) => (
                 <motion.a

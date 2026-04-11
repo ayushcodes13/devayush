@@ -71,7 +71,7 @@ export const projectCategories: ProjectCategory[] = [
     projects: [
       {
         title: "Internal Policy Intelligence System",
-        summary: "A deterministic, governance-gated RAG architecture for enterprise operations — designed to prioritize correctness, traceability, and architectural clarity over raw generative capability.",
+        summary: "Governance-gated enterprise knowledge system with deterministic refusal logic",
         image: policyCover,
         architectureImage: policyArchitecture,
         problem: "In corporate environments, LLMs cannot be allowed to guess. If an employee asks about a refund policy or a security protocol, giving a 'creative' but incorrect answer is a liability. Typical conversational AI chatbots prioritize fluency over correctness — this system enforces zero-trust generation where the LLM is only allowed to respond after deterministic risk gates confirm the query is safe and the retrieved context is the latest, owner-approved version.",
@@ -117,7 +117,7 @@ export const projectCategories: ProjectCategory[] = [
       },
       {
         title: "Tender Match",
-        summary: "An AI-powered decision intelligence workflow built to automate government tender discovery, relevance scoring, and shortlisting — reducing manual daily research from 2 hours to 10 minutes.",
+        summary: "Reduced manual tender research from 2 hours/day to 10 minutes",
         image: tenderCover,
         architectureImage: [tenderArch1, tenderArch2, tenderArch3],
         problem: "A business team was spending nearly 2 hours every day manually scanning multiple government tender portals to identify relevant opportunities. The workflow was repetitive, high-friction, and error-prone. The core problem was decision speed and filtering relevance at scale. The system needed to answer one question reliably: Which tenders deserve immediate review today?",
