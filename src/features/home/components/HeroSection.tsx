@@ -26,7 +26,7 @@ const HeroSection = () => {
                 I build <span className="gradient-text">Operational AI Systems</span>.
               </span>
               <span className="block mt-0.5 text-3xl sm:text-4xl md:text-5xl text-muted-foreground font-bold">
-                Founders can <span className="gradient-text">ship faste with quality</span>.
+                Founders can <span className="gradient-text">ship faster with quality</span>.
               </span>
             </h1>
 
