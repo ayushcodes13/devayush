@@ -8,7 +8,7 @@ const links = [
   { icon: Linkedin, label: "linkedin.com/in/devayush-rout", href: "https://www.linkedin.com/in/devayush-rout/", external: true },
   { icon: Youtube, label: "youtube.com/@devayushrout", href: "https://www.youtube.com/@devayushrout", external: true },
   { icon: BookOpen, label: "hashnode.com/@ayoozzzz", href: "https://hashnode.com/@ayoozzzz", external: true },
-  { icon: FileText, label: "Resume (PDF)", href: "/DevayushRout_Resume.pdf", external: true },
+  { icon: FileText, label: "Devayush Rout CV", href: "/Devayush%20Rout%20CV.pdf", external: true },
 ];
 
 const terminalLines = [
