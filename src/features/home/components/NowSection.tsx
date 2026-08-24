@@ -40,12 +40,12 @@ const NowSection = () => {
             </div>
             <div className="space-y-3">
               <h3 className="text-[15px] font-medium text-foreground">
-                Research-Aware Outreach Engine
+                Governed AI Systems for Evidence-Sensitive Workflows
               </h3>
               <p className="text-[14px] text-muted-foreground leading-[1.7]">
-                Building an AI pipeline that reads published research papers, detects instrumentation bottlenecks and unmet experimental needs, maps them to relevant product offerings, and generates highly contextual outbound outreach for scientific equipment distributors.
+                Tightening CANON and CLARIS: one system constrains policy answers through authority, verdicts, and evidence; the other explores clinical case investigation with provenance, missing-data tracking, and clinician-review boundaries.
                 <br /><br />
-                Designed to replace generic cold outreach with evidence-grounded, research-specific communication that improves reply quality and sales relevance.
+                The current focus is deployment-ready AI architecture where models are surrounded by retrieval, validation, refusal behavior, and visible audit trails.
                </p>
               <motion.div
                 className="flex items-center gap-2 pt-1"

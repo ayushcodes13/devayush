@@ -19,7 +19,7 @@ export async function classifyIntent(query, groqApiKey) {
 Determine whether the user query is related to any of the following valid domains:
 - Devayush Rout (the engineer)
 - the portfolio itself
-- projects (CANON, TenderMatch, MedWaste Guardian, etc.)
+- projects (CANON, CLARIS, TenderMatch, MedWaste Guardian, etc.)
 - engineering work, philosophy, or background
 - AI systems, retrieval pipelines, workflows, evaluations
 - collaborations, hiring, or contact info
@@ -35,6 +35,7 @@ You must output valid JSON ONLY with no additional text, in this exact format:
 
 Examples:
 Query: "How did you build policy retrieval in CANON?" -> {"status": "ALLOW", "topics": ["canon", "policy", "retrieval"]}
+Query: "What is CLARIS?" -> {"status": "ALLOW", "topics": ["claris", "clinical", "hcc"]}
 Query: "How did you build retrieval in TenderMatch?" -> {"status": "ALLOW", "topics": ["tendermatch", "retrieval"]}
 Query: "Write me a pasta recipe" -> {"status": "REFUSE", "topics": ["recipe"]}
 Query: "What is your favorite anime?" -> {"status": "REFUSE", "topics": ["personal", "anime"]}

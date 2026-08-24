@@ -2,14 +2,14 @@
   <img src="public/favicon.png" alt="Devayush Logo" width="100" />
   <h1>Devayush - Applied AI Engineer Portfolio</h1>
   
-  *A production-grade portfolio showcasing LLM systems, RAG pipelines, and evaluation frameworks.*  
+  *A production-grade portfolio showcasing governed AI systems, clinical reasoning prototypes, RAG pipelines, and evaluation frameworks.*
   Architected from the ground up for maintainability and performance.
 
   <p align="center">
-    <a href="https://devayush-portfolio.vercel.app/"><strong>View Live Site »</strong></a>
+    <a href="https://devayushrout.me/"><strong>View Live Site »</strong></a>
   </p>
 
-  <a href="https://devayush-portfolio.vercel.app/">
+  <a href="https://devayushrout.me/">
     <img src="public/og-image.png" alt="Portfolio Preview" width="800" style="border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.2);" />
   </a>
 </div>
@@ -21,11 +21,15 @@ This repository serves as a functional resume and portfolio for my work in the a
 
 I prioritize systems thinking: understanding how things compose over simply knowing what tools to use.
 
-## Featured Update
-The flagship policy-intelligence project has been updated to **CANON**, a policy-governed AI system that retrieves authoritative rules, applies governance verdicts, and answers only with cited evidence.
+## Featured Updates
+The flagship project section now reflects the two systems I am actively sharpening:
 
-- Live demo: [canon.devayushrout.me](https://canon.devayushrout.me)
-- Source: [github.com/ayushcodes13/canon](https://github.com/ayushcodes13/canon)
+- **CANON:** policy-governed AI that retrieves authoritative rules, applies governance verdicts, and answers only with cited evidence.
+  - Live demo: [canon.devayushrout.me](https://canon.devayushrout.me)
+  - Source: [github.com/ayushcodes13/canon](https://github.com/ayushcodes13/canon)
+- **CLARIS:** provenance-aware clinical case investigation for HCC decision-support research, with explicit clinician-review boundaries.
+  - Live demo: [claris.devayushrout.me](https://claris.devayushrout.me)
+  - Source: [github.com/ayushcodes13/claris](https://github.com/ayushcodes13/claris)
 
 ## 🏗 System Architecture
 The application diverges from flat, default AI scaffolding. It aggressively utilizes **Feature-Based Architecture**, ensuring components are grouped strictly by their domain relevance rather than technical type.

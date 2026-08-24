@@ -1,7 +1,14 @@
 import { motion } from "framer-motion";
-import { Database, GitFork, Wrench, Cpu, Activity, ListFilter } from "lucide-react";
+import { Database, GitFork, Wrench, Cpu, Activity, ListFilter, type LucideIcon } from "lucide-react";
 
-const Node = ({ x, y, icon: Icon, label }: any) => (
+type NodeProps = {
+  x: number;
+  y: number;
+  icon?: LucideIcon;
+  label: string;
+};
+
+const Node = ({ x, y, icon: Icon, label }: NodeProps) => (
   <foreignObject x={x - 50} y={y - 16} width={100} height={32}>
     <div className="w-full h-full flex items-center justify-center gap-1.5 rounded-[4px] border border-white/20 bg-white/[0.05] backdrop-blur-md shadow-xl text-[10px] md:text-[11px] text-white/90 font-medium tracking-wide">
       {Icon && <Icon className="w-3.5 h-3.5 text-white/70" />}
@@ -90,7 +97,7 @@ const AboutSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: 0.05 }}
           >
-            I work on retrieval systems, workflow intelligence, and evaluation-aware AI infrastructure.
+            I work on governed AI systems where answers need evidence, constraints, and review boundaries.
           </motion.h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-10 gap-8 lg:gap-10 items-center w-full">
@@ -102,7 +109,7 @@ const AboutSection = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: 0.1 }}
               >
-                Most of my work focuses on AI systems operating under real-world constraints - incomplete context, noisy data, reliability requirements, and failure-sensitive workflows.
+                Most of my work focuses on AI systems operating under real-world constraints - incomplete context, noisy data, reliability requirements, and workflows where unsupported answers can cause real damage.
               </motion.p>
               
               <motion.p 
@@ -112,7 +119,7 @@ const AboutSection = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: 0.15 }}
               >
-                I’m particularly interested in retrieval infrastructure, evaluation pipelines, governance-aware generation, and systems that know when not to answer.
+                I’m particularly interested in policy-governed retrieval, clinical reasoning prototypes, evaluation pipelines, and systems that know when not to answer.
               </motion.p>
               
               <motion.p 

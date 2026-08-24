@@ -56,7 +56,6 @@ const AIChatBot = () => {
     setMessages((prev) => [...prev, userMsg]);
     setIsLoading(true);
 
-    let assistantSoFar = "";
     const allMessages = [...messages, userMsg];
 
     try {
@@ -75,9 +74,10 @@ const AIChatBot = () => {
       if (data.choices?.[0]?.message?.content) {
         setMessages((prev) => [...prev, { role: "assistant", content: data.choices[0].message.content }]);
       }
-    } catch (e: any) {
+    } catch (e: unknown) {
       console.error(e);
-      setMessages((prev) => [...prev, { role: "assistant", content: e.message || "Sorry, something went wrong. Try again!" }]);
+      const message = e instanceof Error ? e.message : "Sorry, something went wrong. Try again!";
+      setMessages((prev) => [...prev, { role: "assistant", content: message }]);
     }
     setIsLoading(false);
   };

@@ -1,6 +1,10 @@
-// @ts-nocheck
-// Deno Edge Function requires ts-nocheck in a Node/Vite environment to prevent standard TS errors
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
+
+declare const Deno: {
+  env: {
+    get(key: string): string | undefined;
+  };
+};
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -54,41 +58,34 @@ Multimodal: Hume AI, Vapi, ElevenLabs
 
 ## Key Projects
 
-### LLM Applications
-1. Internal Support Ops Knowledge System - RAG system with hybrid search (semantic + BM25) for internal support teams. Uses chunking with metadata preservation, reranking, and citation tracking. Tech: Python, LangChain, pgvector, FastAPI, Redis.
-2. Multi-Step Research Agent - Autonomous agent using plan-then-execute pattern with LangGraph. Decomposes questions, searches in parallel, validates sources, synthesizes with citations. Self-correction reduced hallucination by 40%.
-3. LLM Evaluation Pipeline - Automated eval framework using LLM-as-judge + deterministic checks. Measures factual accuracy, relevance, completeness. Tech: Python, OpenAI, Anthropic, SQLite, GitHub Actions.
-4. Legal Document Q&A Engine - Domain-specific RAG with clause-level chunking (not fixed-size) for legal contracts. Layout-aware PDF parsing with inline citations. Tech: LlamaIndex, PostgreSQL, Unstructured.
+### Governed AI Systems
+1. CANON - policy-governed AI for organizational rules. It routes the owner, retrieves the authoritative policy version, applies safe/refuse/escalate verdicts, and only then lets the model answer with cited evidence. Stack: React 19, TypeScript, Vite, TanStack Router/Query, Tailwind CSS v4, Radix UI, Python FastAPI, Gemini embeddings, Groq, Vercel. Live: https://canon.devayushrout.me. Source: https://github.com/ayushcodes13/canon.
+2. CLARIS - provenance-aware clinical case investigation for HCC decision-support research. It uses a Python-owned reasoning backend, generated checkpoint artifacts, CT/SEG preview assets, controlled evidence retrieval, missing-data tracking, and clinician-review reports. It is a research prototype, not diagnosis or treatment advice. Live: https://claris.devayushrout.me. Source: https://github.com/ayushcodes13/claris.
 
-### AI Automations
-5. Customer Support Copilot - AI drafts responses, retrieves docs, learns from agent corrections via human-in-the-loop feedback loop. Monthly improvement flywheel.
-6. Code Review Agent - Automated PR reviewer combining rule-based checks + LLM analysis. Parses git diffs, loads file context, posts inline GitHub comments.
-7. Data Pipeline Orchestrator - Generates data pipelines from natural language specs. Sandboxed validation step catches 90% of spec misinterpretations before deployment.
-8. Model Serving Gateway - Unified API for multiple LLM providers with automatic fallback chains, rate limiting, cost tracking.
+### Workflow Intelligence
+3. TenderMatch - procurement intelligence pipeline that reduced manual tender research from 2 hours/day to around 10 minutes through ingestion, parsing, semantic matching, ranking, and shortlist generation.
+4. MedWaste Guardian - multimodal biomedical waste compliance assistant using image, voice, and text inputs with retrieval over disposal regulations.
 
-### Vibe Coding
-9. This portfolio site - structurally customized. React + Tailwind + Framer Motion.
-10. AI Study Companion - generates flashcards/quizzes from lecture notes. Built with Cursor + Claude Code, shipped MVP in 3 days.
-11. Prompt Playground - side-by-side prompt testing across LLM providers with versioning and cost estimation.
-12. Meeting Notes Summarizer - Chrome extension for auto-summarizing transcripts, extracting action items, pushing to Notion/Linear. Built in a weekend.
+### Applied ML and Assistive Systems
+5. HYDRAN - hybrid dual residual attention network for brain tumor detection and segmentation with Grad-CAM explainability.
+6. AURA - voice-first assistive AI for elderly and visually impaired users, combining speech, selective vision, and spoken responses.
+7. Ask Krishna - full-stack spiritual guidance SaaS with auth, streaming AI, retrieval over Bhagavad Gita verses, and freemium usage tracking.
 
-### Research-Grade ML/DL
-13. Medical Image Classification - CNN with Grad-CAM explainability for medical imaging. Prioritized trust over raw accuracy.
-14. Time Series Anomaly Detection - LSTM autoencoder for industrial sensor data. Unsupervised approach works without labeled anomaly data.
-15. NLP Text Classification Benchmark - Compared BERT/RoBERTa/DeBERTa fine-tuning. Domain-adaptive pre-training improved F1 by 8%.
-16. Recommender System - Hybrid collaborative + content-based + contextual bandits. Improved discovery metrics by 20%.
+### Portfolio Platform
+8. This portfolio site - React + Vite + Tailwind + Framer Motion with a scoped Groq-powered assistant that talks about my work, project architecture, and collaboration fit.
 
 ## Current Focus
-- Retrieval-augmented generation and decision-support systems
-- Multimodal setups where vision and language have clear roles
-- Applied ML where accuracy and traceability matter
+- policy-governed AI systems
+- clinical reasoning research prototypes with clear human-review boundaries
+- evidence-grounded retrieval and response validation
+- evaluation, refusal behavior, and deployment discipline for AI apps
 
 ## Availability
 Open to applied AI roles and collaborations. Interested in teams building real AI products, not hype.
 
 ## Important Links - ALWAYS share these when relevant
 - GitHub: https://github.com/ayushcodes13 - share this when anyone asks about my work, projects, or code
-- Portfolio: https://devayush.com
+- Portfolio: https://devayushrout.me
 - When someone asks to see my work/projects/code, proactively include the GitHub link
 - When someone asks how to reach me or collaborate, point them to the contact section on my portfolio
 

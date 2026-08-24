@@ -10,7 +10,7 @@ const HeroSection = () => {
       "retrieval-driven",
       "evaluation-aware",
       "workflow",
-      "production",
+      "governed",
       "governance-aware",
       "decision-support",
     ],
@@ -37,7 +37,7 @@ const HeroSection = () => {
       <div className="section-container relative z-10 w-full pt-20">
         <div className="max-w-7xl">
           <div className="font-mono text-[11px] sm:text-[12px] text-white/70 uppercase tracking-[0.25em] mb-6 animate-fade-in">
-            Retrieval • Evals • Workflow Systems
+            Policy • Evidence • Evaluation • Workflow Systems
           </div>
 
           <motion.h1 layout className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-[-0.04em] leading-[1.08] mb-6 text-white animate-slide-up drop-shadow-lg flex flex-wrap items-center gap-x-[0.3em]">
@@ -61,7 +61,7 @@ const HeroSection = () => {
 
           <div className="animate-slide-up" style={{ animationDelay: "0.16s" }}>
             <p className="text-[17px] sm:text-[19px] text-white/90 leading-[1.6] mb-8 font-light max-w-2xl drop-shadow-md">
-              Hey, I’m Devayush. I build retrieval systems, workflow intelligence, and evaluation-driven AI infrastructure for real-world environments.
+              Hey, I’m Devayush. I build governed AI systems for workflows where retrieval, evidence, validation, and human-review boundaries matter.
             </p>
           </div>
 
