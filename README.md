@@ -21,6 +21,12 @@ This repository serves as a functional resume and portfolio for my work in the a
 
 I prioritize systems thinking: understanding how things compose over simply knowing what tools to use.
 
+## Featured Update
+The flagship policy-intelligence project has been updated to **CANON**, a policy-governed AI system that retrieves authoritative rules, applies governance verdicts, and answers only with cited evidence.
+
+- Live demo: [canon.devayushrout.me](https://canon.devayushrout.me)
+- Source: [github.com/ayushcodes13/canon](https://github.com/ayushcodes13/canon)
+
 ## 🏗 System Architecture
 The application diverges from flat, default AI scaffolding. It aggressively utilizes **Feature-Based Architecture**, ensuring components are grouped strictly by their domain relevance rather than technical type.
 
