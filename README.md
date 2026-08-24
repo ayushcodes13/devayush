@@ -1,80 +1,93 @@
 <div align="center">
-  <img src="public/favicon.png" alt="Devayush Logo" width="100" />
-  <h1>Devayush - Applied AI Engineer Portfolio</h1>
-  
-  *A production-grade portfolio showcasing governed AI systems, clinical reasoning prototypes, RAG pipelines, and evaluation frameworks.*
-  Architected from the ground up for maintainability and performance.
+  <img src="public/favicon.png" alt="Devayush logo" width="88" />
 
-  <p align="center">
-    <a href="https://devayushrout.me/"><strong>View Live Site »</strong></a>
-  </p>
+  # Devayush Rout
 
-  <a href="https://devayushrout.me/">
-    <img src="public/og-image.png" alt="Portfolio Preview" width="800" style="border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.2);" />
+  **Portfolio for governed AI systems, retrieval workflows, and applied ML projects.**
+
+  [![Live Site](https://img.shields.io/badge/LIVE-devayushrout.me-16A34A?style=for-the-badge&logo=vercel&logoColor=white)](https://devayushrout.me)
+  [![CANON](https://img.shields.io/badge/CANON-policy_governed_AI-111111?style=for-the-badge)](https://canon.devayushrout.me)
+  [![CLARIS](https://img.shields.io/badge/CLARIS-clinical_AI_research-2563EB?style=for-the-badge)](https://claris.devayushrout.me)
+  [![GitHub](https://img.shields.io/badge/GitHub-ayushcodes13-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ayushcodes13)
+
+  <br />
+  <br />
+
+  <a href="https://devayushrout.me">
+    <img src="public/og-image.png" alt="Devayush portfolio preview" width="100%" />
   </a>
 </div>
 
-<br />
+## Overview
 
-## 🌟 The Philosophy
-This repository serves as a functional resume and portfolio for my work in the applied AI space. Rather than treating this as a simple weekend project, the codebase has been deliberately structured to mirror **production software architecture**-separating concerns, organizing by functional domains, and ensuring high customizability. 
+This is my personal portfolio website. It presents my work around governed AI systems, evidence-grounded retrieval, clinical reasoning prototypes, workflow intelligence, and evaluation-aware AI infrastructure.
 
-I prioritize systems thinking: understanding how things compose over simply knowing what tools to use.
+The site includes structured project case studies, a scoped AI assistant, live project links, and deployment-ready frontend/backend boundaries.
 
-## Featured Updates
-The flagship project section now reflects the two systems I am actively sharpening:
+## Featured Work
 
-- **CANON:** policy-governed AI that retrieves authoritative rules, applies governance verdicts, and answers only with cited evidence.
-  - Live demo: [canon.devayushrout.me](https://canon.devayushrout.me)
-  - Source: [github.com/ayushcodes13/canon](https://github.com/ayushcodes13/canon)
-- **CLARIS:** provenance-aware clinical case investigation for HCC decision-support research, with explicit clinician-review boundaries.
-  - Live demo: [claris.devayushrout.me](https://claris.devayushrout.me)
-  - Source: [github.com/ayushcodes13/claris](https://github.com/ayushcodes13/claris)
+| Project | Focus | Live |
+| --- | --- | --- |
+| CANON | Policy-governed AI with retrieval, verdicts, constraints, and cited answers | [canon.devayushrout.me](https://canon.devayushrout.me) |
+| CLARIS | Provenance-aware clinical case investigation for HCC research | [claris.devayushrout.me](https://claris.devayushrout.me) |
+| TenderMatch | Procurement intelligence and tender matching workflow | [GitHub](https://github.com/ayushcodes13/tendermatch) |
+| MedWaste Guardian | Multimodal biomedical waste compliance assistant | [GitHub](https://github.com/ayushcodes13/MedWaste-Guardian) |
 
-## 🏗 System Architecture
-The application diverges from flat, default AI scaffolding. It aggressively utilizes **Feature-Based Architecture**, ensuring components are grouped strictly by their domain relevance rather than technical type.
+## Stack
 
-```
-src/
-├── core/
-│   └── layout/         # Application shell (Navbar, Footer, NavLink)
-├── features/
-│   ├── ai-chat/        # Embedded Groq-powered AI Assistant
-│   └── home/           # Landing page domains (Projects, TechStack, Hero)
-└── components/
-    └── shared/         # Reusable primitives (ThemeToggle, ScrollReveal)
-```
+| Layer | Tools |
+| --- | --- |
+| Frontend | React, TypeScript, Vite |
+| UI | Tailwind CSS, Radix UI, Framer Motion |
+| Assistant API | Express, Supabase Edge Function |
+| AI | Groq |
+| Deployment | Vercel |
 
-## 🛠 Tech Stack
-- **Framework:** React + Vite
-- **TypeScript:** Strict type-safety across the client
-- **Styling:** Tailwind CSS + Radix UI (`shadcn/ui`)
-- **Animation:** Framer Motion (for specialized hardware-accelerated transitions)
-- **Backend Edge:** Supabase Edge Functions (Deno) / Express
-- **AI Integration:** Groq API (Llama-3-70b-versatile)
-
-## 🚀 Getting Started
-
-If you'd like to spin up the portfolio locally to examine the frontend or chat mechanisms:
+## Run Locally
 
 ```bash
-# 1. Clone the repository
 git clone https://github.com/ayushcodes13/devayush.git
 cd devayush
-
-# 2. Install dependencies (Bun or NPM)
 npm install
-
-# 3. Setup environment variables (Requires a Groq API Key)
 echo "GROQ_API_KEY=your_key_here" > .env
-
-# 4. Start the development server
 npm run dev
 ```
 
-The application will be available simultaneously with the Express background server proxying AI requests properly at `http://localhost:8080`.
+Required for the assistant:
 
-<br />
+```bash
+GROQ_API_KEY=
+```
+
+The frontend runs at `http://localhost:8080` and the local API server runs at `http://localhost:3000`.
+
+## Project Structure
+
+```text
+src/
+  core/              shared layout
+  features/home/     portfolio sections
+  features/ai-chat/  scoped portfolio assistant
+  data/              project case-study data
+api/                 local/serverless assistant API
+supabase/functions/  edge assistant function
+public/              static assets and metadata images
+```
+
+## Checks
+
+```bash
+npm run lint
+npm test -- --run
+npm run build
+```
+
+## Notes
+
+- CANON and CLARIS are linked as live deployed projects.
+- The assistant is scoped to my portfolio, projects, background, and collaboration context.
+- Clinical project content is framed as research/prototype work, not medical advice.
+
 <div align="center">
-  <i>Built by <a href="https://github.com/ayushcodes13">Devayush Rout</a>.</i>
+  <sub>Built by <a href="https://github.com/ayushcodes13">Devayush Rout</a>.</sub>
 </div>
