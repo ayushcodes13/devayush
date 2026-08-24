@@ -48,6 +48,53 @@ CURRENT DIRECTION:
 CANON is now deployed as a productionized portfolio MVP at https://canon.devayushrout.me with a Python AI runtime, Gemini embeddings, Groq generation, custom logo/favicon, updated README, and live Vercel deployment.
 `,
 
+    claris: `
+PROJECT: CLARIS
+
+TYPE:
+Provenance-aware clinical case investigation and decision-support research prototype.
+
+SUMMARY:
+CLARIS is a clinical learning, analysis, reasoning, and intelligence system for longitudinal HCC case investigation. It combines structured patient state, imaging-derived measurements, controlled evidence retrieval, validation, and traceable synthesis into a clinician-review workflow.
+
+PROBLEM:
+Medical-adjacent AI systems cannot just produce polished answers. They need to show what data exists, what data is missing, what evidence supports each claim, and where human review is required. CLARIS is built around traceability and clinical boundaries instead of autonomous diagnosis.
+
+SYSTEM DESIGN:
+- Python-owned clinical reasoning backend
+- generated checkpoint artifacts for frontend review
+- React/TanStack clinical workstation
+- imaging workspace with CT previews and selected SEG-derived measurements
+- controlled evidence retrieval
+- missing-data and review-flag tracking
+- clinician-review report output
+
+ARCHITECTURE COMPONENTS:
+- PatientCase construction
+- case investigation orchestrator
+- clinical context investigation
+- imaging investigation
+- treatment response context
+- evidence investigation
+- validation and traceable synthesis
+
+TECH STACK:
+Python, React, TypeScript, TanStack Start, TanStack Router, TanStack Query, Vite, Tailwind CSS, Radix UI, Recharts, Vercel.
+
+ENGINEERING FOCUS:
+- clinical AI boundaries
+- provenance-aware reasoning
+- inspectable agent state
+- evidence-grounded medical-adjacent workflows
+- frontend/backend contract design
+
+KEY DESIGN PRINCIPLE:
+CLARIS is a research prototype for clinician review, not an autonomous diagnostic system, treatment recommender, clinically validated product, or regulated medical device.
+
+CURRENT DIRECTION:
+CLARIS is deployed at https://claris.devayushrout.me and documented at https://github.com/ayushcodes13/claris.
+`,
+
     tendermatch: `
 PROJECT: TenderMatch
 

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowRight, ArrowUpRight, Github, ExternalLink, X, AlertTriangle, Lightbulb, Wrench, BarChart3 } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Github, ExternalLink, X, AlertTriangle, Lightbulb, Wrench, BarChart3, type LucideIcon } from "lucide-react";
 import { projectCategories, Project } from "@/data/projects";
 
 // Display order: Flagship → Legacy → Weekend Experiments → AI Automations
@@ -12,7 +12,7 @@ const orderedCategories = displayOrder
 
 const sectionDelay = (i: number) => ({ duration: 0.35, delay: i * 0.07 });
 
-const SectionBlock = ({ icon: Icon, label, children, index }: { icon: any; label: string; children: React.ReactNode; index: number }) => (
+const SectionBlock = ({ icon: Icon, label, children, index }: { icon: LucideIcon; label: string; children: React.ReactNode; index: number }) => (
   <motion.div
     initial={{ opacity: 0, y: 14 }}
     animate={{ opacity: 1, y: 0 }}

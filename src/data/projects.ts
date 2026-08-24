@@ -30,6 +30,9 @@ import krishnaVerse from "@/assets/krishna-verse.png";
 import policyArchitecture from "@/assets/policy-architecture.png";
 import policyCover from "@/assets/policy-cover.png";
 import policyDemo from "@/assets/policy-demo.png";
+import clarisCover from "@/assets/claris-cover.png";
+import clarisWorkstation from "@/assets/claris-workstation.png";
+import clarisImaging from "@/assets/claris-imaging.png";
 import tenderCover from "@/assets/tender-cover.png";
 import tenderArch1 from "@/assets/tender-arch-1.png";
 import tenderArch2 from "@/assets/tender-arch-2.png";
@@ -65,8 +68,8 @@ export interface ProjectCategory {
 export const projectCategories: ProjectCategory[] = [
   {
     id: "flagship",
-    label: "Flagship Projects",
-    tagline: "Production-grade LLM application systems",
+    label: "Governed AI Systems",
+    tagline: "Evidence-aware AI systems for policy, clinical, and operational workflows",
     icon: "",
     projects: [
       {
@@ -113,6 +116,50 @@ export const projectCategories: ProjectCategory[] = [
         ],
         github: "https://github.com/ayushcodes13/canon",
         demo: "https://canon.devayushrout.me",
+      },
+      {
+        title: "CLARIS",
+        summary: "Provenance-aware clinical case investigation for HCC decision-support research",
+        image: clarisCover,
+        architectureImage: clarisWorkstation,
+        resultsImages: [clarisImaging],
+        problem: "Medical-adjacent AI systems need to show how a conclusion was formed, what evidence was used, what data is missing, and where clinician review is required. CLARIS focuses on longitudinal hepatocellular carcinoma case investigation without pretending to be an autonomous diagnostic product.",
+        architecture: "A Python-owned clinical reasoning backend produces checkpoint artifacts for a React/TanStack workstation. The frontend presents normalized patient state, imaging-derived measurements, evidence retrieval, agent trajectory, missing data, review flags, and a traceable clinician-review report.",
+        architecturePipeline: [
+          "PatientCase Construction - Normalize demographics, labs, imaging context, and timeline",
+          "Case Investigation Orchestrator - Coordinate clinical, imaging, treatment-response, and evidence passes",
+          "Imaging Investigation - Surface CT previews, SEG overlays, and selected derived measurements",
+          "Evidence Retrieval - Attach controlled-corpus references to claims instead of free-form claims",
+          "Validation - Track missing information, review flags, and unsupported assumptions",
+          "Clinician-Review Report - Produce a bounded assessment for human review, not autonomous diagnosis",
+        ],
+        decisions: [
+          "Kept the AI architecture in Python so reasoning state, validation, and checkpoint generation remain inspectable",
+          "Separated clinical investigation from frontend rendering so the UI reflects generated artifacts rather than inventing state",
+          "Used real HCC-TACE-Seg CT preview examples while keeping raw DICOM and heavy data outside git",
+          "Framed the product as a research prototype with explicit clinical boundaries instead of a treatment recommender",
+        ],
+        technologies: ["Python", "React", "TypeScript", "TanStack Start", "TanStack Router", "TanStack Query", "Vite", "Tailwind CSS", "Radix UI", "Recharts"],
+        failureModes: [
+          "Research prototype only - not clinically validated and not a regulated medical device",
+          "Frontend currently reads generated checkpoint/demo artifacts instead of a full live clinical backend",
+          "Raw DICOM, SEG, and NIfTI files remain outside git and must be managed separately",
+          "Any medical conclusion requires clinician review and cannot be treated as diagnosis or treatment advice",
+        ],
+        results: [
+          "Live custom domain at claris.devayushrout.me",
+          "Clinical workstation presents case overview, imaging workspace, evidence trace, investigation state, and report routes",
+          "Real CT preview examples and SEG overlay demo are included as lightweight committed assets",
+          "Backend tests currently pass with 61 test cases documented in the project README",
+          "README clearly documents clinical boundaries, architecture, run commands, and research limitations",
+        ],
+        metrics: [
+          { label: "Tests", value: "61" },
+          { label: "Domain", value: "claris.devayushrout.me" },
+          { label: "Boundary", value: "Review" },
+        ],
+        github: "https://github.com/ayushcodes13/claris",
+        demo: "https://claris.devayushrout.me",
       },
       {
         title: "Tender Match",

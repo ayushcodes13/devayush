@@ -15,6 +15,9 @@ export function retrieveContext(topics) {
     if (lowerTopics.some(t => t.includes("canon") || t.includes("policy") || t.includes("governance") || t.includes("retrieval"))) {
         context.push(portfolioKnowledge["policysystem"]);
     }
+    if (lowerTopics.some(t => t.includes("claris") || t.includes("clinical") || t.includes("hcc") || t.includes("medical") || t.includes("imaging"))) {
+        context.push(portfolioKnowledge["claris"]);
+    }
     if (lowerTopics.some(t => t.includes("tender") || t.includes("match"))) {
         context.push(portfolioKnowledge["tendermatch"]);
     }
