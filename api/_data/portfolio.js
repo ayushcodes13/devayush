@@ -2,35 +2,36 @@
 
 export const portfolioKnowledge = {
     policysystem: `
-PROJECT: Internal Policy Intelligence System
+PROJECT: CANON
 
 TYPE:
-Governance-aware enterprise retrieval system.
+Policy-governed AI and enterprise retrieval system.
 
 SUMMARY:
-Internal Policy Intelligence System is a retrieval-driven enterprise knowledge platform designed to answer internal policy and operational questions with controlled, traceable, and governance-aware responses.
+CANON is a policy-governed intelligence system designed to answer internal policy and operational questions only after routing the query, retrieving the authoritative policy version, enforcing governance constraints, and grounding the response in cited evidence.
 
 PROBLEM:
-Employees repeatedly ask operational and HR-related questions whose answers are buried across fragmented internal documents, policy PDFs, and internal knowledge repositories. Traditional search systems are slow, inconsistent, and difficult to trust.
+Employees repeatedly ask operational questions whose answers are buried across fragmented internal documents, SOPs, policy files, and internal repositories. A normal chatbot can answer fluently while still being wrong. CANON is built for decisions where the answer needs proof, source clauses, and an explicit safe/refuse/escalate verdict.
 
 SYSTEM DESIGN:
-- retrieval-augmented generation pipeline
-- scoped enterprise search
-- governance-aware response routing
-- access-controlled retrieval workflows
-- refusal-aware response generation
-- source-grounded answer generation
+- React 19 + Vite + TanStack frontend
+- Python FastAPI policy intelligence backend
+- Gemini embedding retrieval over approved policy documents
+- Groq-powered constrained generation
+- owner-scoped retrieval workflows
+- deterministic governance verdicts
+- source-grounded answer and refusal generation
 
 ARCHITECTURE COMPONENTS:
-- document ingestion pipeline
-- chunking + embedding workflows
-- semantic + keyword retrieval
-- response grounding layer
-- policy-aware refusal logic
-- traceability and citation system
+- intent detection
+- owner scoping
+- Gemini embedding index
+- version-aware policy retrieval
+- governance gate with SAFE, REFUSE_POLICY, REFUSE_INVALID, and ESCALATE outcomes
+- cited response contract with sources, supporting clauses, confidence, and grounding status
 
 TECH STACK:
-Python, FastAPI, LangChain, PostgreSQL, pgvector, OpenAI embeddings, hybrid retrieval pipelines.
+React 19, TypeScript, Vite, TanStack Router, TanStack Query, Tailwind CSS v4, Radix UI, Python FastAPI, Gemini embeddings, Groq inference, Vercel.
 
 ENGINEERING FOCUS:
 - governance-aware AI
@@ -41,10 +42,10 @@ ENGINEERING FOCUS:
 - traceable AI systems
 
 KEY DESIGN PRINCIPLE:
-The system prioritizes controlled and grounded behavior over unrestricted generation. It is designed to know when not to answer.
+The system prioritizes controlled and grounded behavior over unrestricted generation. It is designed to know when not to answer, when to refuse, and when to escalate.
 
 CURRENT DIRECTION:
-Evolving toward a more operational enterprise intelligence layer with stronger observability, evaluation pipelines, and access-aware retrieval infrastructure.
+CANON is now deployed as a productionized portfolio MVP at https://canon.devayushrout.me with a Python AI runtime, Gemini embeddings, Groq generation, custom logo/favicon, updated README, and live Vercel deployment.
 `,
 
     tendermatch: `
