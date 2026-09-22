@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const principles = [
-  { label: "Systems over demos", detail: "Production reliability matters more than impressive prototypes" },
-  { label: "Evaluation before scaling", detail: "Measure what works before building more of it" },
-  { label: "Retrieval before prompting", detail: "Better context beats better prompts every time" },
-  { label: "Observability for every AI system", detail: "If you can't monitor it, you can't trust it" },
+  { label: "Evidence before confidence", detail: "When a task depends on evidence, the output should be traceable back to it." },
+  { label: "Measure the failure, not the vibe", detail: "Eval sets and failure labels tell you what actually needs fixing." },
+  { label: "Deterministic where possible", detail: "Don't ask an LLM to do work that code can verify reliably." },
+  { label: "Escalate uncertainty", detail: "Ambiguous cases should reach a human instead of becoming confident guesses." },
 ];
 
 const EngineeringApproachSection = () => {
@@ -27,7 +27,7 @@ const EngineeringApproachSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.4, delay: 0.05 }}
         >
-          How I Think
+          How I Build Reliable AI
         </motion.h2>
 
         <div className="grid sm:grid-cols-2 gap-4">
