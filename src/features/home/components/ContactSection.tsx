@@ -15,11 +15,11 @@ const terminalLines = [
   { prompt: true, text: "whoami", delay: 0 },
   { prompt: false, text: "devayush | applied ai engineer", delay: 600 },
   { prompt: true, text: "cat status.txt", delay: 1200 },
-  { prompt: false, text: "🟢 available for startup collaborations & early product roles", delay: 1800 },
+  { prompt: false, text: "🟢 open to select AI engineering projects", delay: 1800 },
   { prompt: true, text: "cat location.txt", delay: 2400 },
   { prompt: false, text: "📍 india (IST, UTC+5:30)", delay: 3000 },
-  { prompt: true, text: "cat interests.txt", delay: 3600 },
-  { prompt: false, text: "retrieval systems, llm agents, eval pipelines", delay: 4200 },
+  { prompt: true, text: "cat focus.txt", delay: 3600 },
+  { prompt: false, text: "evidence, evaluation, retrieval, workflow systems", delay: 4200 },
   { prompt: true, text: "ssh devayush@collaborate", delay: 4800 },
   { prompt: false, text: "connecting... ✓ ready", delay: 5400 },
 ];
@@ -97,7 +97,7 @@ const ContactSection = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: 0.05 }}
             >
-              Interested in retrieval systems, evaluation pipelines, or workflow intelligence?
+              Building an AI feature that needs to be reliable, not just impressive?
             </motion.h3>
             <motion.p
               className="text-[14px] text-muted-foreground mb-6 max-w-md leading-[1.65]"
@@ -106,7 +106,7 @@ const ContactSection = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: 0.1 }}
             >
-              Let's prototype an AI system around it. Based in India. Open to early-stage product roles, startup collaborations, and founder conversations.
+              I’m open to scoped AI engineering work around retrieval, evaluation, document workflows, integrations, and system reliability.
             </motion.p>
 
             <div className="flex flex-col gap-4 mt-4">

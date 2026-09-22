@@ -12,26 +12,12 @@ interface Post {
 const posts: Post[] = [
   {
     title: "A RAG system that knows when not to answer",
-    description: "A deep dive into governance-gated retrieval, deterministic verdicts, and building AI systems that fail predictably",
+    description: "A deep dive into governance-gated retrieval, deterministic verdicts, and building AI systems that fail predictably.",
     date: "2026",
     tag: "RAG",
     href: "https://devayush.hashnode.dev/rag-system-that-knows-when-not-to-answer",
   },
-  {
-    title: "Why evaluation matters in LLM applications",
-    description: "You can't improve what you can't measure. A framework for thinking about LLM evaluation beyond vibes.",
-    date: "2026",
-    tag: "EVALUATION",
-    href: "https://hashnode.com/@ayoozzzz",
-  },
-  {
-    title: "Failure modes in retrieval pipelines",
-    description: "A taxonomy of how RAG systems break, and what to monitor to catch it early.",
-    date: "2026",
-    tag: "DEBUGGING",
-    href: "https://hashnode.com/@ayoozzzz",
-  },
-];
+]
 
 const WritingSection = () => {
   return (
@@ -73,7 +59,7 @@ const WritingSection = () => {
           </motion.a>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 gap-6 max-w-2xl">
           {posts.map((post, i) => (
             <motion.a
               key={post.title}

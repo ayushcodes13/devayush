@@ -111,10 +111,28 @@ const ProjectsSection = () => {
                           loading="lazy"
                         />
                       </div>
-                      <div className="p-5">
+                      <div className="p-5 flex flex-col min-h-[190px]">
                         <h4 className="text-sm md:text-base font-bold tracking-[-0.04em] text-foreground group-hover:text-primary transition-colors duration-150 leading-[1.2]">
                           {project.title}
                         </h4>
+                        <p className="text-[13px] text-muted-foreground leading-[1.6] mt-2 line-clamp-3">
+                          {project.summary}
+                        </p>
+
+                        <div className="mt-auto pt-4 flex items-center justify-between gap-3 border-t border-border">
+                          {project.metrics?.[0] ? (
+                            <span className="font-mono text-[10px] text-muted-foreground">
+                              {project.metrics[0].label}:{" "}
+                              <span className="text-foreground">{project.metrics[0].value}</span>
+                            </span>
+                          ) : (
+                            <span />
+                          )}
+                          <span className="inline-flex items-center gap-1 font-mono text-[10px] text-primary">
+                            view details
+                            <ArrowRight size={10} />
+                          </span>
+                        </div>
                       </div>
                     </motion.button>
                   ))}

@@ -3,7 +3,7 @@
 
   # Devayush Rout
 
-  **Portfolio for governed AI systems, retrieval workflows, and applied ML projects.**
+  **Applied AI engineering portfolio focused on reliability, retrieval, evaluation, and real workflows.**
 
   [![Live Site](https://img.shields.io/badge/LIVE-devayushrout.me-16A34A?style=for-the-badge&logo=vercel&logoColor=white)](https://devayushrout.me)
   [![CANON](https://img.shields.io/badge/CANON-policy_governed_AI-111111?style=for-the-badge)](https://canon.devayushrout.me)
@@ -20,7 +20,7 @@
 
 ## Overview
 
-This is my personal portfolio website. It presents my work around governed AI systems, evidence-grounded retrieval, clinical reasoning prototypes, workflow intelligence, and evaluation-aware AI infrastructure.
+This is my personal portfolio website. It presents my work around reliable applied AI: LLM evaluation, evidence-grounded retrieval, document intelligence, workflow automation, and human-in-the-loop systems.
 
 The site includes structured project case studies, a scoped AI assistant, live project links, and deployment-ready frontend/backend boundaries.
 

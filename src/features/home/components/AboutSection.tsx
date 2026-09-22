@@ -97,7 +97,7 @@ const AboutSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: 0.05 }}
           >
-            I work on governed AI systems where answers need evidence, constraints, and review boundaries.
+            The model answering is only half the system.
           </motion.h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-10 gap-8 lg:gap-10 items-center w-full">
@@ -109,7 +109,7 @@ const AboutSection = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: 0.1 }}
               >
-                Most of my work focuses on AI systems operating under real-world constraints - incomplete context, noisy data, reliability requirements, and workflows where unsupported answers can cause real damage.
+                I work on the parts that determine whether an AI output deserves to be trusted: retrieval, evidence quality, evaluation, validation, refusal behavior, and human review.
               </motion.p>
               
               <motion.p 
@@ -119,18 +119,9 @@ const AboutSection = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: 0.15 }}
               >
-                I’m particularly interested in policy-governed retrieval, clinical reasoning prototypes, evaluation pipelines, and systems that know when not to answer.
+                I also build practical AI workflows that connect models to documents, tools, data, and real business processes.
               </motion.p>
               
-              <motion.p 
-                className="text-[16px] text-muted-foreground leading-[1.8] font-light"
-                initial={{ opacity: 0, y: 15 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: 0.2 }}
-              >
-                I care less about impressive demos and more about whether a system behaves predictably once deployed into actual workflows.
-              </motion.p>
             </div>
 
             <motion.div 

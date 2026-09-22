@@ -290,84 +290,75 @@ ENGINEERING FOCUS:
 PROJECT: Portfolio Website
 
 TYPE:
-Operational AI portfolio and retrieval-aware interface.
+Applied AI engineering portfolio with a scoped retrieval-backed assistant.
 
 SUMMARY:
-Personal portfolio platform designed to showcase retrieval systems, workflow intelligence projects, evaluation-aware AI infrastructure, and operational engineering work.
+Personal portfolio focused on reliable applied AI: retrieval, evaluation, evidence-aware systems, document workflows, and practical automation.
 
 FEATURES:
-- retrieval-aware portfolio assistant
+- retrieval-backed portfolio assistant
 - scoped AI interaction system
 - semantic query classification
-- governance-aware refusal logic
-- operational AI positioning
+- refusal behavior for out-of-scope questions
+- project case studies with architecture, tradeoffs, and limitations
 
 TECH STACK:
 React, Vite, TailwindCSS, Framer Motion, Vercel, Groq API.
 
 ENGINEERING FOCUS:
-- scoped AI systems
+- reliable AI systems
+- evidence and evaluation
 - retrieval-aware interaction
-- portfolio intelligence workflows
-- operational UI systems
-- AI interface governance
+- document and workflow systems
+- practical AI engineering
 `,
 
     background: `
 PROFILE: Devayush Rout
 
 ROLE:
-Applied AI Engineer focused on retrieval systems, workflow intelligence, and operational AI infrastructure.
+Applied AI Engineer at Bynd focused on making AI systems trustworthy enough to actually use.
 
 BACKGROUND:
 BTech in Artificial Intelligence and Machine Learning based in India.
 
 ENGINEERING PHILOSOPHY:
-- reliability over flashiness
-- retrieval before generation
-- observability matters
-- evaluation-aware development
-- systems should behave predictably under real-world constraints
+- evidence before confidence
+- measure failures instead of relying on vibes
+- use deterministic checks where they are more reliable than an LLM
+- route ambiguous cases to humans instead of forcing confident answers
+- build systems that behave predictably under real-world constraints
 
 CORE INTERESTS:
-- retrieval systems
-- workflow intelligence
-- evaluation pipelines
-- governance-aware AI
-- multimodal AI systems
-- operational ML systems
+- LLM evaluation and reliability
+- retrieval and RAG systems
+- evidence verification
+- document intelligence
+- human-in-the-loop workflows
+- practical AI automation
 
 PRIMARY STACK:
 Python, FastAPI, PostgreSQL, pgvector, LangGraph, LlamaIndex, Docker, OpenAI, Anthropic, AWS.
 
 WORK STYLE:
-Builds end-to-end systems with emphasis on operational reliability, traceability, and deployment realism.
+Builds end-to-end AI systems with emphasis on evidence, failure handling, traceability, and practical deployment.
 `,
 
     collaborations: `
-OPEN TO WORK & COLLABORATIONS
+WORK & COLLABORATIONS
 
 CURRENT STATUS:
-Active — Open to:
-- applied AI engineering roles
-- product-focused AI systems
-- startup collaborations
-- operational AI infrastructure projects
-- retrieval and workflow intelligence systems
-
-INTEREST AREAS:
-- retrieval systems
-- workflow intelligence
-- multimodal systems
-- evaluation infrastructure
-- operational AI products
+Open to select scoped AI engineering projects and collaborations around:
+- retrieval and RAG systems
+- LLM evaluation and reliability
+- document intelligence
+- workflow automation
+- backend and integration work for AI features
 
 PREFERRED WORK:
-Projects involving:
-- real-world workflows
-- infrastructure-aware AI
-- governance-sensitive systems
-- operational reliability
-- deployment-oriented AI engineering
+Projects where AI has to interact with real documents, data, tools, or business workflows — especially when evidence, failure handling, or human review matters.
+
+WORKING STYLE:
+Start with a specific problem and a bounded first deliverable. Prefer measurable outcomes and honest system limitations over broad AI transformation claims.
 `
 };

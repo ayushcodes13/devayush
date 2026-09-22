@@ -6,13 +6,11 @@ const HeroSection = () => {
   const [titleNumber, setTitleNumber] = useState(0);
   const titles = useMemo(
     () => [
-      "operational",
-      "retrieval-driven",
-      "evaluation-aware",
-      "workflow",
-      "governed",
-      "governance-aware",
-      "decision-support",
+      "grounded",
+      "evaluated",
+      "traceable",
+      "reviewable",
+      "reliable",
     ],
     []
   );
@@ -37,11 +35,11 @@ const HeroSection = () => {
       <div className="section-container relative z-10 w-full pt-20">
         <div className="max-w-7xl">
           <div className="font-mono text-[11px] sm:text-[12px] text-white/70 uppercase tracking-[0.25em] mb-6 animate-fade-in">
-            Policy • Evidence • Evaluation • Workflow Systems
+            Applied AI Engineer @ Bynd
           </div>
 
           <motion.h1 layout className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-[-0.04em] leading-[1.08] mb-6 text-white animate-slide-up drop-shadow-lg flex flex-wrap items-center gap-x-[0.3em]">
-            <motion.span layout>I build</motion.span>
+            <motion.span layout>I build AI systems that are</motion.span>
             <motion.span layout className="relative inline-flex flex-col h-[1.1em] overflow-hidden">
               <AnimatePresence mode="popLayout">
                 <motion.span
@@ -56,12 +54,12 @@ const HeroSection = () => {
                 </motion.span>
               </AnimatePresence>
             </motion.span>
-            <motion.span layout>AI Systems.</motion.span>
+            <motion.span layout>.</motion.span>
           </motion.h1>
 
           <div className="animate-slide-up" style={{ animationDelay: "0.16s" }}>
             <p className="text-[17px] sm:text-[19px] text-white/90 leading-[1.6] mb-8 font-light max-w-2xl drop-shadow-md">
-              Hey, I’m Devayush. I build governed AI systems for workflows where retrieval, evidence, validation, and human-review boundaries matter.
+              I work on the layer between “the model answered” and “we can trust the answer” — retrieval, evaluation, validation, and human review.
             </p>
           </div>
 
@@ -74,12 +72,10 @@ const HeroSection = () => {
             style={{ animationDelay: "0.24s" }}
           >
             <a
-              href="/Devayush%20Rout%20CV.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#projects"
               className="inline-flex items-center justify-center min-w-[160px] font-mono text-[13px] px-6 py-3.5 rounded-md bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 shadow-[0_0_20px_rgba(20,184,104,0.3)] hover:shadow-[0_0_30px_rgba(20,184,104,0.5)] transform hover:-translate-y-0.5"
             >
-              view resume
+              view my work
             </a>
             <a
               href="#contact"

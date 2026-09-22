@@ -2,6 +2,7 @@ import Navbar from "@/core/layout/Navbar";
 import HeroSection from "@/features/home/components/HeroSection";
 
 import AboutSection from "@/features/home/components/AboutSection";
+import ExperienceSection from "@/features/home/components/ExperienceSection";
 import EngineeringApproachSection from "@/features/home/components/EngineeringApproachSection";
 import ProjectsSection from "@/features/home/components/ProjectsSection";
 import TechStackSection from "@/features/home/components/TechStackSection";
@@ -27,10 +28,13 @@ const Index = () => {
         <AboutSection />
       </ScrollReveal>
       <ScrollReveal>
-        <EngineeringApproachSection />
+        <ExperienceSection />
       </ScrollReveal>
       <ScrollReveal>
         <ProjectsSection />
+      </ScrollReveal>
+      <ScrollReveal>
+        <EngineeringApproachSection />
       </ScrollReveal>
       <ScrollReveal>
         <TechStackSection />
