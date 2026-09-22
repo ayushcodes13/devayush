@@ -128,7 +128,7 @@ const AIChatBot = () => {
                 <div className="text-center py-8">
                   <p className="text-sm text-muted-foreground mb-3">👋 Ask anything about Devayush</p>
                   <div className="flex flex-wrap gap-2 justify-center">
-                    {["What do you build?", "Your tech stack?", "Open to work?"].map((q) => (
+                    {["What do you build?", "Your tech stack?", "Can we work together?"].map((q) => (
                       <button
                         key={q}
                         onClick={() => { setInput(q); }}
