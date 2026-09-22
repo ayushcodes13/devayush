@@ -68,8 +68,8 @@ export interface ProjectCategory {
 export const projectCategories: ProjectCategory[] = [
   {
     id: "flagship",
-    label: "Governed AI Systems",
-    tagline: "Evidence-aware AI systems for policy, clinical, and operational workflows",
+    label: "Selected Work",
+    tagline: "Applied AI systems where evidence, workflow behavior, and reliability matter",
     icon: "",
     projects: [
       {
@@ -235,7 +235,7 @@ export const projectCategories: ProjectCategory[] = [
         results: [
           "Unified multi-modal input system supporting image, voice, and text for real-time waste analysis",
           "Automated legal compliance checking against country-specific biomedical waste regulations",
-          "Reduced manual compliance verification time from hours to seconds",
+          "Demonstrated fast retrieval of relevant disposal guidance in the prototype",
           "Hands-free voice interaction enables use in sterile clinical environments",
           "Modular multi-agent architecture allows easy addition of new modalities and regulatory frameworks",
         ],
@@ -251,9 +251,9 @@ export const projectCategories: ProjectCategory[] = [
     projects: [
       {
         title: "HYDRAN: Hybrid Dual Residual Attention Network",
-        summary: "State-of-the-art brain tumor detection and segmentation model outperforming all benchmark architectures.",
+        summary: "A custom brain-tumor detection and segmentation model built from scratch and evaluated against common benchmark architectures.",
         image: hydranCover,
-        problem: "Cancer is one of the leading causes of fatalities worldwide. Traditional diagnostic methods rely on human interpretation of medical images, which is prone to inconsistencies and is time-consuming. Early and accurate detection can significantly improve treatment outcomes and survival rates - but requires superhuman consistency at pixel-level precision.",
+        problem: "Cancer is one of the leading causes of fatalities worldwide. Traditional diagnostic methods rely on human interpretation of medical images, which is prone to inconsistencies and is time-consuming. Early and accurate detection can significantly improve treatment outcomes and survival rates, while consistent pixel-level segmentation remains technically difficult.",
         architecture: "A novel hybrid architecture combining dual residual paths with attention mechanisms in an encoder-decoder framework. Skip connections preserve spatial detail while attention blocks focus on diagnostically relevant regions. Grad-CAM provides explainability for clinical trust.",
         architectureImage: hydranArchitecture,
         architecturePipeline: [
