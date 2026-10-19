@@ -30,6 +30,7 @@ The site includes structured project case studies, a scoped AI assistant, live p
 | --- | --- | --- |
 | CANON | Policy-governed AI with retrieval, verdicts, constraints, and cited answers | [canon.devayushrout.me](https://canon.devayushrout.me) |
 | CLARIS | Provenance-aware clinical case investigation for HCC research | [claris.devayushrout.me](https://claris.devayushrout.me) |
+| Atlas | Static campaign analytics over synthetic or local CSV data | [Live demo](https://atlas.devayushrout.me) · [GitHub](https://github.com/ayushcodes13/atlas) |
 | TenderMatch | Procurement intelligence and tender matching workflow | [GitHub](https://github.com/ayushcodes13/tendermatch) |
 | MedWaste Guardian | Multimodal biomedical waste compliance assistant | [GitHub](https://github.com/ayushcodes13/MedWaste-Guardian) |
 

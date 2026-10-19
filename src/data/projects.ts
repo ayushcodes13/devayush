@@ -37,6 +37,7 @@ import tenderCover from "@/assets/tender-cover.png";
 import tenderArch1 from "@/assets/tender-arch-1.png";
 import tenderArch2 from "@/assets/tender-arch-2.png";
 import tenderArch3 from "@/assets/tender-arch-3.png";
+import atlasDashboard from "@/assets/project-captures/atlas-live-dashboard.png";
 
 export interface Project {
   title: string;
@@ -240,6 +241,42 @@ export const projectCategories: ProjectCategory[] = [
           "Modular multi-agent architecture allows easy addition of new modalities and regulatory frameworks",
         ],
         github: "https://github.com/ayushcodes13/MedWaste-Guardian",
+      },
+      {
+        title: "Atlas",
+        summary: "A static campaign analytics demo that turns synthetic or local CSV data into a filterable performance overview.",
+        image: atlasDashboard,
+        problem: "Campaign data is often spread across rows and channels, making a quick performance review harder than it needs to be. Atlas demonstrates a compact way to explore a dataset without connecting an ad platform or sending a selected CSV to a server.",
+        architecture: "A static HTML, CSS, and JavaScript app reads the bundled synthetic CSV or a file selected in the browser. It applies date, channel, and text filters, then calculates the visible KPIs, trend, and channel breakdown directly from the rows. There is no backend or model call.",
+        architecturePipeline: [
+          "Load the bundled 28-row synthetic campaign sample or choose a local CSV",
+          "Parse and validate rows in the browser",
+          "Filter by date range and channel, then search campaign activity",
+          "Calculate revenue, conversions, ROAS, conversion rate, and chart data from visible rows",
+          "Reset to the bundled sample when finished",
+        ],
+        decisions: [
+          "Use clearly labeled synthetic data so example figures are not mistaken for customer results",
+          "Keep selected CSV files in browser memory; the static demo has no upload endpoint or account system",
+          "Calculate the dashboard directly from the currently filtered rows rather than claiming AI-generated insights",
+        ],
+        technologies: ["HTML", "CSS", "JavaScript", "CSV", "Vercel"],
+        failureModes: [
+          "The project has no live ad-platform connection or persistent storage",
+          "Imported data is not uploaded, saved, or protected by authentication; confidential CSV files should not be used",
+          "Metrics are simple calculations over supplied rows and do not establish causal campaign attribution",
+        ],
+        results: [
+          "Production site is served as a static Vercel deployment with no build command or environment variables",
+          "Aside Browser review confirmed the live page displays the 28-row synthetic sample without browser console or request errors",
+          "The README records browser checks for sample loading, filters, search, local CSV import, reset, and a narrow viewport",
+        ],
+        metrics: [
+          { label: "Hosting", value: "Static Vercel" },
+          { label: "Sample", value: "28 synthetic rows" },
+        ],
+        github: "https://github.com/ayushcodes13/atlas",
+        demo: "https://atlas.devayushrout.me/",
       },
     ],
   },
