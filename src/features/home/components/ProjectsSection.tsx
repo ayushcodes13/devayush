@@ -198,7 +198,7 @@ const ProjectsSection = () => {
                   >
                     {activeProject.gallery.map((img, i) => (
                       <div key={i} className="rounded-lg overflow-hidden aspect-video border border-border hover:border-primary/30 transition-colors cursor-pointer">
-                        <img src={img} alt={`${activeProject.title} screenshot ${i + 1}`} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                        <img src={img} alt={activeProject.galleryAlts?.[i] ?? `${activeProject.title} screenshot ${i + 1}`} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
                       </div>
                     ))}
                   </motion.div>
@@ -257,7 +257,7 @@ const ProjectsSection = () => {
                           : [activeProject.architectureImage]
                         ).map((img, idx) => (
                           <div key={idx} className="rounded-xl overflow-hidden border border-border bg-background/50">
-                            <img src={img} alt={`Architecture diagram ${idx + 1}`} className="w-full h-auto" />
+                            <img src={img} alt={activeProject.architectureImageAlts?.[idx] ?? `${activeProject.title} architecture diagram ${idx + 1}`} className="w-full h-auto" />
                           </div>
                         ))}
                       </div>
