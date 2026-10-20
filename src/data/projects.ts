@@ -281,7 +281,7 @@ export const projectCategories: ProjectCategory[] = [
       {
         title: "Tender Compliance Engine",
         summary: "A human-reviewed workflow that extracts candidate clauses from tender PDFs, links them to source text, and exports a response sheet.",
-        image: "https://raw.githubusercontent.com/ayushcodes13/tender-compliance-engine/main/docs/screenshots/readme-review-evidence.jpg",
+        image: "https://tender-compliance-engine.vercel.app/images/review-workspace.png",
         problem: "Preparing technical tender responses requires finding requirements in long PDFs and checking each candidate against its original source.",
         architecture: "A Next.js app reads text from tender PDFs, matches candidate clauses to selectable source text, displays citations and page highlights, and exports tender wording with blank supplier response fields. A server-side route handles PDF analysis and any configured model request.",
         architecturePipeline: [
@@ -312,7 +312,7 @@ export const projectCategories: ProjectCategory[] = [
       {
         title: "Lintel",
         summary: "A local CLI that screens AI-agent repositories for structural reliability signals and produces a Markdown report with findings and suggested fixes.",
-        image: "https://raw.githubusercontent.com/ayushcodes13/lintel/main/output/playwright/lintel-sample-report.png",
+        image: "https://lintel.devayushrout.me/assets/lintel-sample-report.png",
         problem: "Agent demos often show only the happy path; engineers need a first-pass way to inspect repository structure and configuration for reliability signals.",
         architecture: "A local Python command-line tool scans repository files and configuration using lexical indicators, separates source/config signals from documentation mentions, and writes findings and priority fixes to Markdown. The hosted page is a presentation only.",
         architecturePipeline: [
@@ -342,7 +342,7 @@ export const projectCategories: ProjectCategory[] = [
       {
         title: "Agentic Policy Reliability",
         summary: "A local-first policy lookup prototype that demonstrates dated-source selection, clause evidence, abstention, and human-review routing.",
-        image: "https://raw.githubusercontent.com/ayushcodes13/agentic-policy-reliability/main/output/playwright/policy-desktop-match-aside.png",
+        image: "https://agentic-policy-reliability.devayushrout.me/images/local-match.png",
         problem: "Policy answers can rely on outdated versions, lack a traceable source, or go beyond the available evidence.",
         architecture: "A deterministic Python demo matches a question to local policy clauses and tags, selects the version effective on a requested date, and returns the clause metadata or abstains and routes the question for review. Its examples are synthetic; it does not call an LLM or represent a production policy system.",
         architecturePipeline: [
@@ -372,7 +372,7 @@ export const projectCategories: ProjectCategory[] = [
       {
         title: "Clara Agent Reliability",
         summary: "A local review workspace demonstrating rule-based safety gates for medical-adjacent product recommendations.",
-        image: "https://raw.githubusercontent.com/ayushcodes13/clara-agent-reliability/main/output/playwright/clara-review.png",
+        image: "https://clara-agent-reliability.devayushrout.me/assets/clara-review.png",
         problem: "A product that matches a query may still be inappropriate for the user's context, so recommendations need visible risk checks and review gates.",
         architecture: "A local Python web workspace routes a query, searches a checked-in product catalogue, exposes catalogue claims and risk factors, and builds a review-gated result with a decision trace. The hosted page is a static presentation; the interactive Python service runs locally.",
         architecturePipeline: [
@@ -518,7 +518,7 @@ export const projectCategories: ProjectCategory[] = [
       {
         title: "AURA 2.0",
         summary: "An experimental wellbeing conversation prototype with self-described check-ins, reviewed voice transcription, and browser-local OCR; it does not measure emotion or provide clinical care.",
-        image: "https://raw.githubusercontent.com/ayushcodes13/AURA-2.0/main/output/playwright/aura-aside-home.jpg",
+        image: "auraCover",
         problem: "AURA explores a supportive conversation interface with optional user-described context and ways to review speech transcripts or inspect image text locally.",
         architecture: "A Vite browser app supports text chat through a same-origin server proxy, optional self-described check-ins, reviewed voice transcription, and browser-local OCR. Chat and transcription need a server-side key; the hosted page is protected and is not an available public demo.",
         architecturePipeline: [
@@ -548,7 +548,7 @@ export const projectCategories: ProjectCategory[] = [
       {
         title: "Ally",
         summary: "An experimental text conversation prototype centered on user choice and self-authored context.",
-        image: "https://raw.githubusercontent.com/ayushcodes13/Ally/main/output/playwright/ally-aside-demo-chat.png",
+        image: "https://ally.devayushrout.me/assets/ally-mark.svg",
         problem: "A conversation prototype should make optional user context explicit and avoid claiming it can reliably know how someone feels.",
         architecture: "The runnable Python browser app and CLI accept text and optional user-authored context. After consent, recent conversation text and the optional check-in go through a same-origin server handler to Groq. Experimental audio and vision modules are separate from the runnable experience.",
         architecturePipeline: [
@@ -578,7 +578,7 @@ export const projectCategories: ProjectCategory[] = [
       {
         title: "SwasthaSamvad",
         summary: "A health-text research prototype with a browser-only evidence explorer and a separate local Python RAG experiment.",
-        image: "https://raw.githubusercontent.com/ayushcodes13/SwasthaSamvad/main/screenshots/swasthasamvad-production-explorer.jpg",
+        image: "https://swasthasamvad.devayushrout.me/assets/mark.svg",
         problem: "The project explores how to surface text passages and citations while making the limits of lexical matching and generated answers explicit.",
         architecture: "The published static browser explorer searches a chosen text file locally and surfaces sentences sharing words with a question. A separate local Python CLI retrieves reviewed text with BM25 and can optionally use Groq behind evidence gates; the hosted explorer does not generate answers or call an AI provider.",
         architecturePipeline: [
