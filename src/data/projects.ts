@@ -514,7 +514,7 @@ export const projectCategories: ProjectCategory[] = [
           "The deployed page is informational only and does not provide the local assistant",
         ],
         github: "https://github.com/ayushcodes13/AURA",
-      }
+      },
       {
         title: "AURA 2.0",
         summary: "An experimental wellbeing conversation prototype with self-described check-ins, reviewed voice transcription, and browser-local OCR; it does not measure emotion or provide clinical care.",
