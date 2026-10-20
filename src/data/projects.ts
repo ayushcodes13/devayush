@@ -518,7 +518,7 @@ export const projectCategories: ProjectCategory[] = [
       {
         title: "AURA 2.0",
         summary: "An experimental wellbeing conversation prototype with self-described check-ins, reviewed voice transcription, and browser-local OCR; it does not measure emotion or provide clinical care.",
-        image: "auraCover",
+        image: auraCover,
         problem: "AURA explores a supportive conversation interface with optional user-described context and ways to review speech transcripts or inspect image text locally.",
         architecture: "A Vite browser app supports text chat through a same-origin server proxy, optional self-described check-ins, reviewed voice transcription, and browser-local OCR. Chat and transcription need a server-side key; the hosted page is protected and is not an available public demo.",
         architecturePipeline: [
