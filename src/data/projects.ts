@@ -113,18 +113,18 @@ export const projectCategories: ProjectCategory[] = [
         resultsImages: [policyDemo],
         results: [
           "Migrated from a slow Streamlit-hosted prototype into a deployable Vercel app with a Python API",
-          "Live custom domain at Clausewise.devayushrout.me with same-origin API routing",
+          "Live custom domain at canon.devayushrout.me with same-origin API routing",
           "Gemini embeddings replaced the heavier local ingestion dependency for production deployment",
           "Interactive console returns status, verdict, confidence, context count, sources, and supporting clauses",
           "README, docs, favicon, logo, screenshots, and deployment instructions were productionized",
         ],
         metrics: [
-          { label: "Live Domain", value: "Clausewise.devayushrout.me" },
+          { label: "Live Domain", value: "canon.devayushrout.me" },
           { label: "Runtime", value: "Python" },
           { label: "Verdicts", value: "4" },
         ],
-        github: "https://github.com/ayushcodes13/Clausewise",
-        demo: "https://Clausewise.devayushrout.me",
+        github: "https://github.com/ayushcodes13/clausewise",
+        demo: "https://canon.devayushrout.me",
       },
       {
         title: "CLARIS",

@@ -45,7 +45,7 @@ KEY DESIGN PRINCIPLE:
 The system prioritizes controlled and grounded behavior over unrestricted generation. It is designed to know when not to answer, when to refuse, and when to escalate.
 
 CURRENT DIRECTION:
-Clausewise is now deployed as a productionized portfolio MVP at https://Clausewise.devayushrout.me with a Python AI runtime, Gemini embeddings, Groq generation, custom logo/favicon, updated README, and live Vercel deployment.
+Clausewise is now deployed as a productionized portfolio MVP at https://canon.devayushrout.me with a Python AI runtime, Gemini embeddings, Groq generation, custom logo/favicon, updated README, and live Vercel deployment.
 `,
 
     claris: `
