@@ -64,7 +64,7 @@ const CollabSection = () => {
                 className="inline-flex items-center gap-2 rounded-md bg-primary px-4 py-3 text-[13px] font-medium text-primary-foreground hover:bg-primary/90 transition-colors">
                 <Mail size={15} aria-hidden="true" />Discuss a scoped review
               </a>
-              <a href="https://github.com/ayushcodes13/canon" target="_blank" rel="noopener noreferrer"
+              <a href="https://github.com/ayushcodes13/Clausewise" target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-md border border-border px-4 py-3 text-[13px] font-medium text-foreground hover:bg-secondary transition-colors">
                 Inspect my public engineering<ArrowUpRight size={14} aria-hidden="true" />
               </a>

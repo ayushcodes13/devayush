@@ -12,7 +12,7 @@ export function retrieveContext(topics) {
     const lowerTopics = topics.map(t => t.toLowerCase());
 
     // Basic topic matching
-    if (lowerTopics.some(t => t.includes("canon") || t.includes("policy") || t.includes("governance") || t.includes("retrieval"))) {
+    if (lowerTopics.some(t => t.includes("Clausewise") || t.includes("policy") || t.includes("governance") || t.includes("retrieval"))) {
         context.push(portfolioKnowledge["policysystem"]);
     }
     if (lowerTopics.some(t => t.includes("claris") || t.includes("clinical") || t.includes("hcc") || t.includes("medical") || t.includes("imaging"))) {

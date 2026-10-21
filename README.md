@@ -6,7 +6,7 @@
   **Applied AI engineering portfolio focused on reliability, retrieval, evaluation, and real workflows.**
 
   [![Live Site](https://img.shields.io/badge/LIVE-devayushrout.me-16A34A?style=for-the-badge&logo=vercel&logoColor=white)](https://devayushrout.me)
-  [![CANON](https://img.shields.io/badge/CANON-policy_governed_AI-111111?style=for-the-badge)](https://canon.devayushrout.me)
+  [![Clausewise](https://img.shields.io/badge/Clausewise-policy_governed_AI-111111?style=for-the-badge)](https://Clausewise.devayushrout.me)
   [![CLARIS](https://img.shields.io/badge/CLARIS-clinical_AI_research-2563EB?style=for-the-badge)](https://claris.devayushrout.me)
   [![GitHub](https://img.shields.io/badge/GitHub-ayushcodes13-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ayushcodes13)
 
@@ -28,7 +28,7 @@ The site includes structured project case studies, a scoped AI assistant, live p
 
 | Project | Focus | Live |
 | --- | --- | --- |
-| CANON | Policy-governed AI with retrieval, verdicts, constraints, and cited answers | [canon.devayushrout.me](https://canon.devayushrout.me) |
+| Clausewise | Policy-governed AI with retrieval, verdicts, constraints, and cited answers | [Clausewise.devayushrout.me](https://Clausewise.devayushrout.me) |
 | CLARIS | Provenance-aware clinical case investigation for HCC research | [claris.devayushrout.me](https://claris.devayushrout.me) |
 | Atlas | Static campaign analytics over synthetic or local CSV data | [Live demo](https://atlas.devayushrout.me) · [GitHub](https://github.com/ayushcodes13/atlas) |
 | TenderMatch | Procurement intelligence and tender matching workflow | [GitHub](https://github.com/ayushcodes13/tendermatch) |
@@ -85,7 +85,7 @@ npm run build
 
 ## Notes
 
-- CANON and CLARIS are linked as live deployed projects.
+- Clausewise and CLARIS are linked as live deployed projects.
 - The assistant is scoped to my portfolio, projects, background, and collaboration context.
 - Clinical project content is framed as research/prototype work, not medical advice.
 
