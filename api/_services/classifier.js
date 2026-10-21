@@ -34,7 +34,7 @@ You must output valid JSON ONLY with no additional text, in this exact format:
 }
 
 Examples:
-Query: "How did you build policy retrieval in Clausewise?" -> {"status": "ALLOW", "topics": ["Clausewise", "policy", "retrieval"]}
+Query: "How did you build policy retrieval in Clausewise?" -> {"status": "ALLOW", "topics": ["clausewise", "policy", "retrieval"]}
 Query: "What is CLARIS?" -> {"status": "ALLOW", "topics": ["claris", "clinical", "hcc"]}
 Query: "How did you build retrieval in TenderMatch?" -> {"status": "ALLOW", "topics": ["tendermatch", "retrieval"]}
 Query: "Write me a pasta recipe" -> {"status": "REFUSE", "topics": ["recipe"]}
