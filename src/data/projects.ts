@@ -598,7 +598,7 @@ export const projectCategories: ProjectCategory[] = [
       {
         title: "Ally",
         summary: "An experimental text conversation prototype centered on user choice and self-authored context.",
-        image: "https://ally.devayushrout.me/assets/ally-mark.svg",
+        image: "/ally-demo-chat.png",
         problem: "A conversation prototype should make optional user context explicit and avoid claiming it can reliably know how someone feels.",
         architecture: "The runnable Python browser app and CLI accept text and optional user-authored context. After consent, recent conversation text and the optional check-in go through a same-origin server handler to Groq. Experimental audio and vision modules are separate from the runnable experience.",
         architecturePipeline: [
@@ -628,7 +628,7 @@ export const projectCategories: ProjectCategory[] = [
       {
         title: "SwasthaSamvad",
         summary: "A health-text research prototype with a browser-only evidence explorer and a separate local Python RAG experiment.",
-        image: "https://swasthasamvad.devayushrout.me/assets/mark.svg",
+        image: "/swasthasamvad-home.jpg",
         problem: "The project explores how to surface text passages and citations while making the limits of lexical matching and generated answers explicit.",
         architecture: "The published static browser explorer searches a chosen text file locally and surfaces sentences sharing words with a question. A separate local Python CLI retrieves reviewed text with BM25 and can optionally use Groq behind evidence gates; the hosted explorer does not generate answers or call an AI provider.",
         architecturePipeline: [
