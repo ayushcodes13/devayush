@@ -33,20 +33,28 @@ import policyDemo from "@/assets/policy-demo.png";
 import clarisCover from "@/assets/claris-cover.png";
 import clarisWorkstation from "@/assets/claris-workstation.png";
 import clarisImaging from "@/assets/claris-imaging.png";
+import clarisCaseReview from "@/assets/architecture/claris-case-review.svg";
 import tenderCover from "@/assets/tender-cover.png";
 import tenderArch1 from "@/assets/tender-arch-1.png";
 import tenderArch2 from "@/assets/tender-arch-2.png";
 import tenderArch3 from "@/assets/tender-arch-3.png";
 import atlasDashboard from "@/assets/project-captures/atlas-live-dashboard.png";
+import atlasMobile from "@/assets/project-captures/atlas-mobile.png";
+import atlasDataFlow from "@/assets/architecture/atlas-data-flow.svg";
+import tenderReviewDashboard from "@/assets/project-captures/tender-review-dashboard.jpg";
+import tenderReviewEvidence from "@/assets/project-captures/tender-review-evidence.jpg";
+import tenderReviewFlow from "@/assets/architecture/tender-review-flow.svg";
 
 export interface Project {
   title: string;
   summary: string;
   image: string;
   gallery?: string[];
+  galleryAlts?: string[];
   problem: string;
   architecture: string;
   architectureImage?: string | string[];
+  architectureImageAlts?: string[];
   architecturePipeline: string[];
   decisions: string[];
   technologies: string[];
@@ -122,8 +130,10 @@ export const projectCategories: ProjectCategory[] = [
         title: "CLARIS",
         summary: "Provenance-aware clinical case investigation for HCC decision-support research",
         image: clarisCover,
-        architectureImage: clarisWorkstation,
-        resultsImages: [clarisImaging],
+        architectureImage: clarisCaseReview,
+        architectureImageAlts: ["CLARIS architecture: checkpointed specialist investigation flows through deterministic validation to a clinician-review checkpoint; optional model assistance stays allowlisted."],
+        gallery: [clarisWorkstation, clarisImaging],
+        galleryAlts: ["CLARIS case overview showing patient context, evidence trace, missing information, and review flags.", "CLARIS imaging workspace showing a CT preview, imaging context, measurements, and review boundary."],
         problem: "Medical-adjacent AI systems need to show how a conclusion was formed, what evidence was used, what data is missing, and where clinician review is required. CLARIS focuses on longitudinal hepatocellular carcinoma case investigation without pretending to be an autonomous diagnostic product.",
         architecture: "A Python-owned clinical reasoning backend produces checkpoint artifacts for a React/TanStack workstation. The frontend presents normalized patient state, imaging-derived measurements, evidence retrieval, agent trajectory, missing data, review flags, and a traceable clinician-review report.",
         architecturePipeline: [
@@ -161,6 +171,42 @@ export const projectCategories: ProjectCategory[] = [
         ],
         github: "https://github.com/ayushcodes13/claris",
         demo: "https://claris.devayushrout.me",
+      },
+      {
+        title: "Tender Review",
+        summary: "A source-linked workflow for turning text-based tender PDFs into human-reviewed OEM response sheets.",
+        image: tenderReviewDashboard,
+        gallery: [tenderReviewEvidence],
+        galleryAlts: ["Tender Review workspace with a candidate clause, cited source page, and matched text highlight."],
+        architectureImage: tenderReviewFlow,
+        architectureImageAlts: ["Tender Review flow from selectable PDF text through a candidate match and human review to a DOCX with blank supplier fields."],
+        problem: "Preparing a technical response sheet starts with finding candidate clauses and checking them against the source page. The product keeps that match visible so a reviewer can inspect the original wording before exporting a blank OEM response sheet.",
+        architecture: "The hosted MVP is a single Next.js app. A server-side route analyzes the text-based PDF and any configured model request; the browser renders the PDF, positions highlights from PDF.js text geometry, holds the active review, and creates the DOCX.",
+        architecturePipeline: [
+          "Read selectable PDF text page by page",
+          "Find candidate technical clauses with the rule-based preview (or an optional configured model path)",
+          "Match each quote to source text and page geometry",
+          "Show the citation and highlight for human review",
+          "Export tender wording with blank OEM response fields",
+        ],
+        decisions: [
+          "Require a page-text match and usable geometry before presenting a quote as a verified citation",
+          "Keep every candidate in Needs review; the app does not make a supplier compliance decision",
+          "Describe extraction as a candidate finder because it can miss clauses or include false positives",
+        ],
+        technologies: ["Next.js", "TypeScript", "PDF.js", "DOCX", "Vercel"],
+        failureModes: [
+          "Scanned PDFs and OCR-heavy documents are outside the current hosted demo",
+          "The rule-based candidate finder is not exhaustive; reviewers must check the original tender for omissions",
+          "The hosted MVP has no sign-in or saved review history, so only non-confidential sample files should be used",
+        ],
+        results: [
+          "Source-matched candidates show a page number, quote, and positioned highlight for review",
+          "The DOCX export carries tender wording into a sheet with blank supplier response fields",
+          "The README documents file limits, the hosted MVP boundary, and the human-review requirement",
+        ],
+        github: "https://github.com/ayushcodes13/tender-compliance-engine",
+        demo: "https://tender-compliance-engine.vercel.app/",
       },
       {
         title: "Tender Match",
@@ -246,6 +292,10 @@ export const projectCategories: ProjectCategory[] = [
         title: "Atlas",
         summary: "A static campaign analytics demo that turns synthetic or local CSV data into a filterable performance overview.",
         image: atlasDashboard,
+        gallery: [atlasMobile],
+        galleryAlts: ["Atlas campaign dashboard at a 390-pixel narrow viewport."],
+        architectureImage: atlasDataFlow,
+        architectureImageAlts: ["Atlas browser-side flow from bundled or local CSV through validation and filtering to calculated dashboard views, with no server or AI call."],
         problem: "Campaign data is often spread across rows and channels, making a quick performance review harder than it needs to be. Atlas demonstrates a compact way to explore a dataset without connecting an ad platform or sending a selected CSV to a server.",
         architecture: "A static HTML, CSS, and JavaScript app reads the bundled synthetic CSV or a file selected in the browser. It applies date, channel, and text filters, then calculates the visible KPIs, trend, and channel breakdown directly from the rows. There is no backend or model call.",
         architecturePipeline: [
