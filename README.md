@@ -6,7 +6,7 @@
   **Applied AI engineering portfolio focused on reliability, retrieval, evaluation, and real workflows.**
 
   [![Live Site](https://img.shields.io/badge/LIVE-devayushrout.me-16A34A?style=for-the-badge&logo=vercel&logoColor=white)](https://devayushrout.me)
-  [![Clausewise](https://img.shields.io/badge/Clausewise-policy_governed_AI-111111?style=for-the-badge)](https://canon.devayushrout.me)
+  [![Clausewise](https://img.shields.io/badge/clausewise-policy_governed_AI-111111?style=for-the-badge)](https://canon.devayushrout.me)
   [![CLARIS](https://img.shields.io/badge/CLARIS-clinical_AI_research-2563EB?style=for-the-badge)](https://claris.devayushrout.me)
   [![GitHub](https://img.shields.io/badge/GitHub-ayushcodes13-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ayushcodes13)
 
