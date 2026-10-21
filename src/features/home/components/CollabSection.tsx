@@ -1,19 +1,18 @@
 import { motion } from "framer-motion";
-import { CheckCircle2 } from "lucide-react";
+import { ArrowUpRight, CheckCircle2, Mail } from "lucide-react";
 
 const focusAreas = [
-  "Internal knowledge systems",
-  "Document intelligence",
-  "Workflow automation",
-  "Decision-support products",
-  "AI-first MVPs",
+  "RAG and agent evaluation",
+  "Evidence grounding and source validation",
+  "Document workflow exception handling",
+  "Python APIs and integration reliability",
 ];
 
 const availableFor = [
-  "Startup collaborations",
-  "Founding product-engineer roles",
-  "MVP sprint builds",
-  "Early technical consulting",
+  "Focused AI reliability reviews",
+  "Evaluation and regression test sprints",
+  "Scoped backend or RAG integrations",
+  "Agency AI engineering workstreams",
 ];
 
 const CollabSection = () => {
@@ -27,7 +26,7 @@ const CollabSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.3 }}
         >
-          Working with founders
+          Working with AI product teams
         </motion.p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
@@ -38,12 +37,12 @@ const CollabSection = () => {
             transition={{ duration: 0.4, delay: 0.05 }}
           >
             <h2 className="text-xl md:text-2xl font-semibold tracking-[-0.02em] text-foreground mb-4">
-              I help early-stage teams prototype and deploy reliable AI workflow systems quickly.
+              I help AI product teams find and fix failures that ordinary demos and evaluations miss.
             </h2>
             
             <div className="mt-8 space-y-6">
               <div>
-                <p className="text-[13px] font-medium text-foreground mb-3 font-mono uppercase tracking-wider">Focus Areas</p>
+                <p className="text-[13px] font-medium text-foreground mb-3 font-mono uppercase tracking-wider">Problems I Work On</p>
                 <ul className="space-y-2 text-[14px] text-muted-foreground leading-[1.65]">
                   {focusAreas.map((text, i) => (
                     <li key={i} className="flex items-start gap-2">
@@ -55,6 +54,20 @@ const CollabSection = () => {
                   ))}
                 </ul>
               </div>
+            </div>
+            <p className="mt-6 text-[13px] text-muted-foreground leading-[1.65] max-w-md">
+              A first review focuses on one workflow, a small set of synthetic or authorized test cases,
+              and reproducible findings. Scope and fees are agreed before work starts.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <a href="mailto:devayushrout.work@gmail.com?subject=AI%20reliability%20review"
+                className="inline-flex items-center gap-2 rounded-md bg-primary px-4 py-3 text-[13px] font-medium text-primary-foreground hover:bg-primary/90 transition-colors">
+                <Mail size={15} aria-hidden="true" />Discuss a scoped review
+              </a>
+              <a href="https://github.com/ayushcodes13/canon" target="_blank" rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-md border border-border px-4 py-3 text-[13px] font-medium text-foreground hover:bg-secondary transition-colors">
+                Inspect my public engineering<ArrowUpRight size={14} aria-hidden="true" />
+              </a>
             </div>
           </motion.div>
 
