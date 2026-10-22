@@ -61,7 +61,7 @@ Multimodal: Hume AI, Vapi, ElevenLabs
 ## Key Projects
 
 ### Evidence-aware AI systems
-1. CANON - policy-governed AI for organizational rules. It routes the owner, retrieves the authoritative policy version, applies safe/refuse/escalate verdicts, and only then lets the model answer with cited evidence. Stack: React 19, TypeScript, Vite, TanStack Router/Query, Tailwind CSS v4, Radix UI, Python FastAPI, Gemini embeddings, Groq, Vercel. Live: https://canon.devayushrout.me. Source: https://github.com/ayushcodes13/canon.
+1. Clausewise - policy-governed AI for organizational rules. It routes the owner, retrieves the authoritative policy version, applies safe/refuse/escalate verdicts, and only then lets the model answer with cited evidence. Stack: React 19, TypeScript, Vite, TanStack Router/Query, Tailwind CSS v4, Radix UI, Python FastAPI, Gemini embeddings, Groq, Vercel. Live: https://canon.devayushrout.me. Source: https://github.com/ayushcodes13/clausewise.
 2. CLARIS - provenance-aware clinical case investigation for HCC decision-support research. It uses a Python-owned reasoning backend, generated checkpoint artifacts, CT/SEG preview assets, controlled evidence retrieval, missing-data tracking, and clinician-review reports. It is a research prototype, not diagnosis or treatment advice. Live: https://claris.devayushrout.me. Source: https://github.com/ayushcodes13/claris.
 
 ### Workflow Intelligence

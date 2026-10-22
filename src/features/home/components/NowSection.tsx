@@ -43,7 +43,7 @@ const NowSection = () => {
                 Governed AI Systems for Evidence-Sensitive Workflows
               </h3>
               <p className="text-[14px] text-muted-foreground leading-[1.7]">
-                Tightening CANON and CLARIS: one system constrains policy answers through authority, verdicts, and evidence; the other explores clinical case investigation with provenance, missing-data tracking, and clinician-review boundaries.
+                Tightening Clausewise and CLARIS: one system constrains policy answers through authority, verdicts, and evidence; the other explores clinical case investigation with provenance, missing-data tracking, and clinician-review boundaries.
                 <br /><br />
                 The current focus is deployment-ready AI architecture where models are surrounded by retrieval, validation, refusal behavior, and visible audit trails.
                </p>

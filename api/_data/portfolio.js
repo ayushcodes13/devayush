@@ -2,16 +2,16 @@
 
 export const portfolioKnowledge = {
     policysystem: `
-PROJECT: CANON
+PROJECT: Clausewise
 
 TYPE:
 Policy-governed AI and enterprise retrieval system.
 
 SUMMARY:
-CANON is a policy-governed intelligence system designed to answer internal policy and operational questions only after routing the query, retrieving the authoritative policy version, enforcing governance constraints, and grounding the response in cited evidence.
+Clausewise is a policy-governed intelligence system designed to answer internal policy and operational questions only after routing the query, retrieving the authoritative policy version, enforcing governance constraints, and grounding the response in cited evidence.
 
 PROBLEM:
-Employees repeatedly ask operational questions whose answers are buried across fragmented internal documents, SOPs, policy files, and internal repositories. A normal chatbot can answer fluently while still being wrong. CANON is built for decisions where the answer needs proof, source clauses, and an explicit safe/refuse/escalate verdict.
+Employees repeatedly ask operational questions whose answers are buried across fragmented internal documents, SOPs, policy files, and internal repositories. A normal chatbot can answer fluently while still being wrong. Clausewise is built for decisions where the answer needs proof, source clauses, and an explicit safe/refuse/escalate verdict.
 
 SYSTEM DESIGN:
 - React 19 + Vite + TanStack frontend
@@ -45,7 +45,7 @@ KEY DESIGN PRINCIPLE:
 The system prioritizes controlled and grounded behavior over unrestricted generation. It is designed to know when not to answer, when to refuse, and when to escalate.
 
 CURRENT DIRECTION:
-CANON is now deployed as a productionized portfolio MVP at https://canon.devayushrout.me with a Python AI runtime, Gemini embeddings, Groq generation, custom logo/favicon, updated README, and live Vercel deployment.
+Clausewise is now deployed as a productionized portfolio MVP at https://canon.devayushrout.me with a Python AI runtime, Gemini embeddings, Groq generation, custom logo/favicon, updated README, and live Vercel deployment.
 `,
 
     claris: `

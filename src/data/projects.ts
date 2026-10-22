@@ -82,11 +82,11 @@ export const projectCategories: ProjectCategory[] = [
     icon: "",
     projects: [
       {
-        title: "CANON",
+        title: "Clausewise",
         summary: "Policy-governed AI that retrieves authoritative rules before it answers",
         image: policyCover,
         architectureImage: policyArchitecture,
-        problem: "In corporate environments, LLMs cannot be allowed to guess. If someone asks about refund exceptions, security protocols, account closure, or support escalation, a fluent but wrong answer creates operational risk. CANON treats approved policy documents as the canonical source of truth and only lets the model answer after routing, retrieval, governance, and grounding checks pass.",
+        problem: "In corporate environments, LLMs cannot be allowed to guess. If someone asks about refund exceptions, security protocols, account closure, or support escalation, a fluent but wrong answer creates operational risk. Clausewise treats approved policy documents as the canonical source of truth and only lets the model answer after routing, retrieval, governance, and grounding checks pass.",
         architecture: "A Python-owned policy intelligence runtime behind a Vite + React interface. The frontend is a fast portfolio-grade console, while the Python API handles intent detection, owner scoping, Gemini embeddings, policy retrieval, governance verdicts, source-backed generation, and grounding review.",
         architecturePipeline: [
           "Intent Detection - What is the user asking?",
@@ -101,7 +101,7 @@ export const projectCategories: ProjectCategory[] = [
           "Version-aware retrieval: Older document versions are automatically suppressed in favor of the most recent policy version using deterministic dominance rules during ranking",
           "Owner-based scoping: Documents are rigidly filtered based on routed intent ownership, preventing cross-domain contamination (e.g., Support agents accessing Finance internal memos)",
           "Deterministic governance gating with strict verdicts: SAFE, REFUSE_POLICY, REFUSE_INVALID, ESCALATE (limited strictly to security, legal, or compromise cases)",
-          "Evidence-backed responses: Answers and refusals include source paths, supporting clauses, confidence, and a grounding signal so the user can audit why CANON responded",
+          "Evidence-backed responses: Answers and refusals include source paths, supporting clauses, confidence, and a grounding signal so the user can audit why Clausewise responded",
         ],
         technologies: ["React 19", "TypeScript", "Vite", "TanStack Router", "TanStack Query", "Tailwind CSS v4", "Radix UI", "Python FastAPI", "Gemini Embeddings", "Groq"],
         failureModes: [
@@ -123,7 +123,7 @@ export const projectCategories: ProjectCategory[] = [
           { label: "Runtime", value: "Python" },
           { label: "Verdicts", value: "4" },
         ],
-        github: "https://github.com/ayushcodes13/canon",
+        github: "https://github.com/ayushcodes13/clausewise",
         demo: "https://canon.devayushrout.me",
       },
       {
